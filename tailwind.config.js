@@ -21,6 +21,9 @@ module.exports = {
           primaryDark: "#58E6D9", // 80,230,217
           indigoBlue: "#66a6f4",
       }
+      },
+      animation: {
+        'spin-slow': 'spin 30s linear infinite',
       }
     },
   },

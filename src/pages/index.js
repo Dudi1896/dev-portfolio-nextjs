@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { AnimatedText } from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
+import { HireMe } from '@/components/HireMe';
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 export default function Home() {
   return (
@@ -46,19 +48,26 @@ export default function Home() {
                  border-transparent hover:border-colors-dark'
                   download={true}
                 >
-                  Resume <LinkArrow className={"w-6 ml-1"}/>
+                  Resume <LinkArrow className={'w-6 ml-1'} />
                 </Link>
                 <Link
                   href='mailto:abcd@gmail.com'
                   target={'_blank'}
-                  className='ml-4 text-lg font-medium capitalize text-colors-dark underline'
-                >
+                  className='ml-4 text-lg font-medium capitalize text-colors-dark  left-0 -bottom-0.5 group-hover:w-full hover:underline transition-[width] ease duration-300'>
                   Contact
                 </Link>
               </div>
             </div>
           </div>
         </Layout>
+        <HireMe />
+        <div className='absolute right-8 bottom-8 inline-block w-24'>
+          <Image
+            src={lightBulb}
+            alt='Denzel Udemba'
+            className='w-full h-auto'
+          />
+        </div>
       </main>
     </>
   );
