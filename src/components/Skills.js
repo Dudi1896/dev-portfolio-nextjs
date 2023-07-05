@@ -40,8 +40,11 @@ const Skills = () => {
         <Tech name='Ansible' x='25vw' y='-6vw'/>
         <Tech name='NextJs' x='-23vw' y='-4vw'/>
         <Tech name='AWS (EC2, S3)' x='-5vw' y='-10vw'/>
-        <Tech name='PostgreSQL' x='13vw' y='3vw'/>
+        <Tech name='PostgreSQL' x='13vw' y='7vw'/>
         <Tech name='MySQL' x='18vw' y='16vw'/>
+        <Tech name='Wordpress' x='14vw' y='-3vw'/>
+        <Tech name='Contentful' x='-18vw' y='-16vw'/>
+        <Tech name='GraphQL' x='-21vw' y='3vw'/>
 
 
       </div>
