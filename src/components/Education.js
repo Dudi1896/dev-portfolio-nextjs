@@ -45,15 +45,14 @@ export const Education = () => {
                 <Details
                 type='A.S Computer Programming'
                 time='June 2022-Present'
-                place='Chattahoochee Technical College'
-                info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."
+                 place='Chattahoochee Technical College'
+                 info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
+                 Intelligence."
                 />
 
                 <Details
                 type='B.S Electrical Engineering'
-                time='Jan 2015-Dec 2018' 
-                place='Mercer University'
+                time='Jan 2015-Dec 2018' place='Mercer University'
                 info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
                 Intelligence."
                 />
