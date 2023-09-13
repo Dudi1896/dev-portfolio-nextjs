@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
 import { HireMe } from '@/components/HireMe';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
+import { CustomLink } from '@/components/CustomLink';
 
 export default function Home() {
   return (
@@ -50,12 +51,14 @@ export default function Home() {
                 >
                   Resume <LinkArrow className={'w-6 ml-1'} />
                 </Link>
-                <Link
+                <CustomLink 
+                   title='Contact' 
+                  className='ml-4 text-lg font-medium text-colors-dark  left-0 -bottom-0.5'
                   href='mailto:abcd@gmail.com'
                   target={'_blank'}
-                  className='ml-4 text-lg font-medium capitalize text-colors-dark  left-0 -bottom-0.5 group-hover:w-full hover:underline transition-[width] ease duration-300'>
+                  >
                   Contact
-                </Link>
+                </CustomLink >
               </div>
             </div>
           </div>

@@ -4,25 +4,7 @@ import { Logo } from './Logo';
 import { useRouter } from 'next/router';
 import { TwitterIcon,  GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, MoonIcon }  from './Icons';
 import { motion } from 'framer-motion';
-
-const CustomLink = ({ href, title, className = '' }) => {
-  const router = useRouter();
-  return (
-    <Link
-      href={href}
-      className={`${className} relative group`}
-    >
-      {title}
-      <span
-        className={`h-[1px] inline-block bg-colors-dark 
-      absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-      ${router.asPath === href ? 'w-full' : 'w-0'}`}
-      >
-        &nbsp;
-      </span>
-    </Link>
-  );
-};
+import { CustomLink } from './CustomLink';
 
 export const NavBar = () => {
   return (
