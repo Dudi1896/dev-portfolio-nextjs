@@ -3,13 +3,41 @@ export const ResumeData = {
     header: [
       {
         name: "Denzel Udemba",
-        occupation: "Full-Stack Software Engineer",
+        occupation: "Expert Software Engineer and Orchestrator",
       },
     ],
     summary: [
-      "Highly Skilled Software Engineer with 4+ years of hands-on experience and a strong" +
-        "background in Linux as well as supporting automating and optimizing mission-critical" +
-        "deployments in Cloud and On-Premises environments",
+      "I am highly skilled Software Engineer with over 4 years of experience "+ 
+      "in crafting end-to-end business solutions. My expertise in Full-Stack and DevOps Engineering, "+ 
+      "aid in building dynamic web applications with exceptional user experience "+
+      "and streamlining workflows to ensure the reliability of applications.",
+    ],  
+    about: [
+      "Experienced Software Engineer with a proven track record of over 4 years in the dynamic",
+      "fields of DevOps and Full Stack Development. I specialize in bridging the gap between development",
+      "and operations, ensuring seamless, efficient, and scalable software solutions.",
+      "My journey in the world of technology has equipped me with a diverse skill set, ranging from building", 
+      "robust and user-friendly front-end interfaces to architecting and maintaining backend infrastructure.",
+      "With a deep understanding of modern development frameworks, cloud technologies, and CI/CD pipelines,",
+      "I am committed to delivering high-quality software solutions that drive innovation and business success.",
+      "I thrive on solving complex challenges and am passionate about staying at the forefront of emerging technologies.",
+      "I believe in the power of collaboration, teamwork, and continuous learning to achieve technical excellence.",
+      "Let's connect and explore how we can work together to create cutting-edge software solutions and drive digital transformation.",
+      "Feel free to reach out—I'm always open to networking and discussing exciting opportunities.",
+
+      "As a seasoned Full Stack Software Engineer with over 4 years of hands-on experience, I am passionate about crafting", 
+      "end-to-end solutions that empower businesses and drive innovation. With a strong foundation in both front-end and",
+      "back-end development, I specialize in creating dynamic web applications that deliver exceptional user experiences",
+      "My journey in the tech industry has led me to master a wide range of technologies and tools, enabling me to architect",
+      "and develop scalable, responsive, and user-friendly applications. From designing intuitive user interfaces to optimizing",
+      "server-side performance, I thrive on the challenge of building robust systems that stand the test of time.",
+      "My background in DevOps further enhances my ability to streamline development workflows, implement continuous integration",
+      "and continuous deployment (CI/CD) pipelines, and ensure the reliability and scalability of applications in production environments.",
+      "I'm driven by the belief that technology should be a catalyst for positive change, and I'm committed to staying at the forefront of",
+      "industry trends and emerging technologies. Let's connect and explore how I can contribute to your organization's success by",
+      "leveraging my expertise in Full Stack Development. I'm excited about the possibilities and eager to collaborate on exciting projects",
+      "that push the boundaries of what's possible in the digital landscape. Feel free to reach out to discuss opportunities and network with",
+      "like-minded professionals.",
     ],
     contact: [
       {
@@ -116,19 +144,22 @@ export const ResumeData = {
   
     technologies: [
       "JavaScript",
-      "React",
       "SQL",
       "Java",
       "ElasticSearch",
+      "Kubernetes",
       "Python",
       "AWS (EC2, S3)",
-      "Linux",
       "VMware Vsphere",
       "Node.js",
       "Next.js",
       "WordPress",
       "Angular",
-      "C#",
+      "TailwindCSS",
+      "Ansible",
+      "GraphQL",
+      "Spring Boot",
+      "Docker",
     ],
     otherProficiencies: [
       "Virtualization",
