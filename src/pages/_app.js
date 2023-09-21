@@ -10,6 +10,7 @@ const montserrat = Montserrat({
 });
 
 export default function App({ Component, pageProps }) {
+  const excludeLayout = Component.excludeLayout || false;
   return (
     <>
       <Head>
@@ -23,11 +24,11 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <main
-        className={`${montserrat.variable} font-mont bg-colors-light w-full min-h-screen`}
+        className={`${montserrat.variable} font-mont bg-colors-light dark:bg-colors-dark w-full min-h-screen`}
       >
-        <NavBar />
+        {!excludeLayout && <NavBar />}
         <Component {...pageProps} />
-        <Footer />
+        {!excludeLayout && <Footer /> }
       </main>
     </>
   );

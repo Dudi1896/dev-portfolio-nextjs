@@ -5,9 +5,6 @@ import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import Image from 'next/image';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import Skills from '@/components/Skills';
-import { Experience } from '@/components/Experience';
-import { Education } from '@/components/Education';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -29,15 +26,10 @@ const AnimatedNumbers = ({ value }) => {
       }
     });
   }, [springValue, value]);
-  return (
-    <span
-      className='dark:text-colors-primary'
-      ref={ref}
-    ></span>
-  );
+  return <span ref={ref}></span>;
 };
 
-const about = () => {
+export const About = () => {
   return (
     <>
       <Head>
@@ -53,12 +45,12 @@ const about = () => {
             text='Passion Fuels Purpose!'
             className='mb-16'
           />
-          <div className='grid w-full grid-cols-8 gap-16'>
-            <div className='col-span-3 flex flex-col items-start justify-start'>
+          <div className='grid w-full grid-cols-8 gap-16 dark:text-colors-light'>
+            <div className='col-span-3 flex flex-col items-start justify-start dark:text-colors-light'>
               <h2 className='mb-4 text-lg font-bold uppercase text-colors-dark/50 dark:text-colors-primary'>
                 Biography
               </h2>
-              <p className='font-medium my-4 dark:text-colors-light/80'>
+              <p className='font-medium my-4'>
                 Hi, I'm Denzel, a Full-Stack developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With 4 years of experience in the field. I
@@ -66,13 +58,13 @@ const about = () => {
                 clients' visions to life.
               </p>
 
-              <p className='font-medium my-4 dark:text-colors-light/80'>
+              <p className='font-medium my-4'>
                 I believe that design is about more than just making things look
                 pretty – it's about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
 
-              <p className='font-medium my-4 dark:text-colors-light/80'>
+              <p className='font-medium my-4'>
                 Whether I'm working on a website, mobile app, or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
@@ -82,10 +74,10 @@ const about = () => {
             </div>
 
             <div
-              className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-colors-dark dark:border-colors-light
-          bg-colors-light p-8 dark:bg-colors-dark'
+              className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-colors-dark
+          bg-colors-light p-8'
             >
-              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-colors-dark dark:bg-colors-light' />
+              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-colors-dark' />
               <Image
                 src={profilePic}
                 alt='Denzel Udemba'
@@ -95,7 +87,7 @@ const about = () => {
 
             <div className='col-span-2 flex flex-col items-end justify-between'>
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block  text-7xl font-bold dark:text-colors-primary'>
+                <span className='inline-block  text-7xl font-bold'>
                   <AnimatedNumbers value={50} />+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80'>
@@ -104,7 +96,7 @@ const about = () => {
               </div>
 
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block  text-7xl font-bold dark:text-colors-primary'>
+                <span className='inline-block  text-7xl font-bold'>
                   <AnimatedNumbers value={40} />+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80'>
@@ -113,7 +105,7 @@ const about = () => {
               </div>
 
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block  text-7xl font-bold dark:text-colors-primary'>
+                <span className='inline-block  text-7xl font-bold'>
                   <AnimatedNumbers value={4} />+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80'>
@@ -122,13 +114,8 @@ const about = () => {
               </div>
             </div>
           </div>
-          <Skills />
-          <Experience />
-          <Education />
         </Layout>
       </main>
     </>
   );
 };
-
-export default about;
