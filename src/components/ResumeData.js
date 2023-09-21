@@ -28,7 +28,29 @@ export const ResumeData = {
   
     companies: [
       {
-        name: "LTN Global - DevOps Engineer",
+        name: "Nikkyzam",
+        period: "Nov 2022 - Present",
+        role: "Backend Engineer",
+        points: [
+          "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
+          "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
+          "Collaborated with the team to design and develop microservices architecture using Spring Boot, allowing for modular and scalable application development",
+          "Optimized batch performance by tuning job configurations and utilizing parallel processing techniques",
+        ],
+      },
+      {
+        name: "SW Nutrition & Weight Loss",
+        period: "April 2022 - July 2022",
+        role: "Full-Stack Engineer",
+        points: [
+          "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
+          "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
+          "Collaborated with the team to design and develop microservices architecture using Spring Boot, allowing for modular and scalable application development",
+          "Optimized batch performance by tuning job configurations and utilizing parallel processing techniques",
+        ],
+      },
+      {
+        name: "LTN Global",
         period: "June 2019 - Feb 2022",
         role: "DevOps Engineer",
         points: [
@@ -79,13 +101,24 @@ export const ResumeData = {
         grade2: "GPA: 3.3",
       },
     ],
+
+    certification: [
+      {
+        org1: "Oracle Certified Professional",
+        org2: "Udemy",
+        org3: "Coursera",
+
+        cert1: "Java SE 17 Developer",
+        cert2: "The Complete Web Developer Zero to Mastery",
+        cert3: "Scrum Master",
+      },
+    ],
   
     technologies: [
       "JavaScript",
       "React",
       "SQL",
       "Java",
-      "CI/CD",
       "ElasticSearch",
       "Python",
       "AWS (EC2, S3)",
@@ -93,14 +126,18 @@ export const ResumeData = {
       "VMware Vsphere",
       "Node.js",
       "Next.js",
+      "WordPress",
+      "Angular",
+      "C#",
     ],
     otherProficiencies: [
       "Virtualization",
       "Product Development",
-      "Programming",
       "Performance Optimization",
       "Responsive Web Design",
+      "CI/CD",
       "Solutions Deployment",
+      "SEO",
     ],
   };
   

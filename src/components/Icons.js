@@ -543,13 +543,13 @@ export const LinkArrow = ({ className, ...rest }) => (
   </svg>
 );
 
-export const DownloadArrow = ({ className, text, ...rest }) => (
-  <div className={`flex items-center ${className}`}>
+export const DownloadArrow = ({ className, ...rest }) => {
+  return (
     <svg
       width={24}
       height={24}
       viewBox='0 0 24 24'
-      fill='none'
+      fill='current color'
       xmlns='http://www.w3.org/2000/svg'
       className={`w-full h-auto ${className}`}
       {...rest}
@@ -557,12 +557,10 @@ export const DownloadArrow = ({ className, text, ...rest }) => (
       <path
         fill='none'
         d='M8 11L12 15M12 15L16 11M12 15V3M7 4.51555C4.58803 6.13007 3 8.87958 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 8.87958 19.412 6.13007 17 4.51555'
-        stroke='#000000'
+        stroke='#6A6A6C'
         strokeWidth={2}
         strokeLinecap='round'
         strokeLinejoin='round'
       />
-    </svg>
-    {text && <span className='ml-2'>{text}</span>}
-  </div>
-);
+    </svg>)
+};
