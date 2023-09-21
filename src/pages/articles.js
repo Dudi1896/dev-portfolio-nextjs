@@ -51,6 +51,11 @@ const MovingImg = ({ title, img, link }) => {
         src={img}
         alt={title}
         className=' z-10 w-96 h-auto hidden absolute rounded-lg'
+        priority
+        sizes='(max-width: 768px) 100vw,
+        (max-width: 1200px) 50vw,
+        50vw'
+
       />
     </Link>
   );
@@ -62,7 +67,7 @@ const Article = ({ img, title, date, link }) => {
       initial={{y:200}}
       whileInView={{y:0, transition:0.5, ease:"easwInOut"}}
       className=' relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-colors-light text-colors-dark first:mt-0
-    border border-solid border-colors-dark border-r-4 border-b-4'
+    border border-solid border-colors-dark  border-r-4 border-b-4 dark:border-colors-light dark:bg-colors-dark dark:text-colors-light'
     >
       <MovingImg
         title={title}
@@ -78,7 +83,7 @@ export const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
     <li className=' relative col-span-1 w-full p-4 bg-colors-light border border-solid dark:bg-colors-dark border-colors-dark dark:border-colors-light rounded-2xl'>
       <div
-        className=' absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-colors-dark 
+        className=' absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-colors-dark dark:bg-colors-light
         rounded-br-3xl'
       />
 
