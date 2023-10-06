@@ -40,7 +40,7 @@ export const NavBar = () => {
   return (
     <header
       className='w-full px-32 py-2 font-medium flex items-center justify-between
-    text-colors-dark dark:text-colors-light relative lg:px-10'
+    text-colors-dark dark:text-colors-light relative lg:px-16 md:px-12 sm:px-8 ms:px-4 z-10'
     >
 
       <Logo />

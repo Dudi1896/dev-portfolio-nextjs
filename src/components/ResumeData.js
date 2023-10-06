@@ -132,13 +132,13 @@ export const ResumeData = {
 
     certification: [
       {
-        org1: "Oracle Certified Professional",
-        org2: "Udemy",
-        org3: "Coursera",
+        org1: "OCP: Java SE 17",
+        org2: "Udemy: Web Dev ZTM",
+        org3: "Udemy: Scrum Master",
 
-        cert1: "Java SE 17 Developer",
-        cert2: "The Complete Web Developer Zero to Mastery",
-        cert3: "Scrum Master",
+        cert1: "",
+        cert2: "",
+        cert3: "",
       },
     ],
   

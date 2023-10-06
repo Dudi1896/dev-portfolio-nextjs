@@ -81,6 +81,32 @@ const resume = () => {
                 <div key={index}>▪ {OthSkills}</div>
               ))}
             </div>
+
+            <div className='p-4'>
+              <h2 className='text-colors-primary font-semibold'>Certifications:</h2>
+              {ResumeData.certification.map((certification, index) => (
+                <div
+                  className=' text-base'
+                  key={index}
+                >
+                  <div className='  max-w-2xl flex justify-between'>
+                    <p>▪ {certification.org1}</p>
+                    <p>{certification.cert1}</p>
+                  </div>
+
+                  <div className='  max-w-2xl flex justify-between'>
+                    <p>▪ {certification.org2}</p>
+                    <p>{certification.cert2}</p>
+                  </div>
+
+                  <div className='  max-w-2xl flex justify-between'>
+                    <p>▪ {certification.org3}</p>
+                    <p>{certification.cert3}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
           </div>
 
           <div className='row-span-6  pb-14 font-bold space-y-10  '>
@@ -114,13 +140,13 @@ const resume = () => {
                 <div className='space-y-1' key={index}
                 >
                   <div className='max-w-4xl pt-7 flex justify-between'>
-                    <p><span className=' text-colors-primary text-xl font-semibold'>{company.name}</span>— {company.role}</p>
-                    <p className=' text-base'>{company.period}</p>
+                    <p className=' text-colors-dark'><span className=' text-colors-primary text-xl font-semibold'>{company.name}</span> — {company.role}</p>
+                    <p className=' text-xs'>{company.period}</p>
                   </div>
 
                   <div className='max-w-3xl space-y-3'>
                     {company.points.map((point, index) => (
-                      <div key={index}>▪ {point}</div>
+                      <div className='text-base' key={index}>▪ {point}</div>
                     ))}
                   </div>
                 </div>
@@ -135,44 +161,20 @@ const resume = () => {
                   key={index}
                 >
                   <div className='  max-w-4xl flex justify-between'>
-                    <p>▪ {education.major1}</p>
+                    <p className=' text-base' >▪ {education.major1}</p>
                     <p className=' text-base'>{education.school1}</p>
-                    <p className=' text-base'>{education.date1}</p>
+                    <p className=' text-xs'>{education.date1}</p>
                   </div>
 
                   <div className='  max-w-4xl flex justify-between'>
-                    <p>▪ {education.major2}</p>
+                    <p className=' text-base'>▪ {education.major2}</p>
                     <p className=' text-base'>{education.school2}</p>
-                    <p className=' text-base'>{education.date2}</p>
+                    <p className=' text-xs'>{education.date2}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className=' font-medium text-lg'>
-              <h2 className='text-colors-primary font-bold text-lg border-b-2 border-solid border-colors-primaryDark'>Certifications</h2>
-              {ResumeData.certification.map((certification, index) => (
-                <div
-                  className=' space-y-3'
-                  key={index}
-                >
-                  <div className='  max-w-4xl flex justify-between'>
-                    <p>▪ {certification.org1}</p>
-                    <p className=' text-base'>{certification.cert1}</p>
-                  </div>
-
-                  <div className='  max-w-4xl flex justify-between'>
-                    <p>▪ {certification.org2}</p>
-                    <p className=' text-base'>{certification.cert2}</p>
-                  </div>
-
-                  <div className='  max-w-4xl flex justify-between'>
-                    <p>▪ {certification.org3}</p>
-                    <p className=' text-base'>{certification.cert3}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

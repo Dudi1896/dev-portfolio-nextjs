@@ -26,7 +26,12 @@ const AnimatedNumbers = ({ value }) => {
       }
     });
   }, [springValue, value]);
-  return <span ref={ref}></span>;
+  return (
+    <span
+      className='dark:text-colors-primary'
+      ref={ref}
+    ></span>
+  );
 };
 
 export const About = () => {
@@ -43,10 +48,10 @@ export const About = () => {
         <Layout className='pt-16 '>
           <AnimatedText
             text='Passion Fuels Purpose!'
-            className='mb-16'
+            className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'
           />
-          <div className='grid w-full grid-cols-8 gap-16 dark:text-colors-light'>
-            <div className='col-span-3 flex flex-col items-start justify-start dark:text-colors-light'>
+          <div className='grid w-full grid-cols-8 gap-16 dark:text-colors-light sm:gap-8'>
+            <div className='col-span-3 flex flex-col items-start justify-start dark:text-colors-light xl:col-span-4 md:order-2 md:col-span-8'>
               <h2 className='mb-4 text-lg font-bold uppercase text-colors-dark/50 dark:text-colors-primary'>
                 Biography
               </h2>
@@ -75,7 +80,7 @@ export const About = () => {
 
             <div
               className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-colors-dark
-          bg-colors-light p-8'
+          bg-colors-light p-8 xl:col-span-4 md:order-1 md:col-span-8'
             >
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-colors-dark' />
               <Image
@@ -85,30 +90,34 @@ export const About = () => {
               />
             </div>
 
-            <div className='col-span-2 flex flex-col items-end justify-between'>
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block  text-7xl font-bold'>
+            <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center
+            md:order-3 border border-solid border-colors-primaryDark'>
+              <div className='flex flex-col items-end justify-center xl:items-center'>
+                <span className='inline-block  text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80'>
+                <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80
+                xl-text-center md:text-lg sm:text-base xs:text-sm'>
                   satisfied clients
                 </h2>
               </div>
 
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block  text-7xl font-bold'>
+              <div className='flex flex-col items-end justify-center xl:items-center'>
+                <span className='inline-block  text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                   <AnimatedNumbers value={40} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80'>
+                <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80
+                xl-text-center md:text-lg sm:text-base xs:text-sm'>
                   Projects completed
                 </h2>
               </div>
 
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block  text-7xl font-bold'>
+              <div className='flex flex-col items-end justify-center xl:items-center'>
+                <span className='inline-block  text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                   <AnimatedNumbers value={4} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80'>
+                <h2 className='text-xl font-medium capitalize text-colors-dark/50 dark:text-colors-light/80
+                xl-text-center md:text-lg sm:text-base xs:text-sm'>
                   Years of experience
                 </h2>
               </div>
@@ -119,3 +128,5 @@ export const About = () => {
     </>
   );
 };
+
+
