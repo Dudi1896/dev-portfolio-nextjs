@@ -6,19 +6,24 @@ const Details = ({position, company, companyLink, time, address, work}) => {
         const ref = useRef(null);
     return ( 
     <>
-            <li ref={ref} className='  text-colors-dark dark:text-colors-light my-8 first:mt-0 last:mb-0 w-[80%] mx-auto flex flex-col items-center justify-between'>
+            <li ref={ref} className='  text-colors-dark
+             dark:text-colors-light
+             my-8 first:mt-0 last:mb-0 w-[80%] mx-auto flex
+              flex-col items-center justify-between
+            md:w-[80%]'>
                 <LiIcon reference={ref} />
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
-                <h3 className='  text-colors-dark dark:text-colors-light capitalize font-bold text-2xl'>{position}&nbsp;
+                <h3 className='  text-colors-dark dark:text-colors-light capitalize font-bold text-2xl
+                sm:text-xl xs:text-lg'>{position}&nbsp;
                 <a target={'_blank'}
                     href={companyLink}
                     className=' text-colors-primary capitalize'>@{company}
                 </a>
                 </h3>
-                <span className=' capitalize font-medium text-colors-dark/50 dark:text-colors-light/40'>
+                <span className=' capitalize font-medium text-colors-dark/50 dark:text-colors-light/40 xs:text-sm'>
                     {time} | {address}
                 </span>
-                <p className=' font-medium w-full'>
+                <p className=' font-medium w-full md:text-sm'>
                     {work}
                 </p>
             </motion.div>
@@ -37,14 +42,15 @@ export const Experience = () => {
     )
 
   return (
-    <div className=' my-20'> 
-        <h2 className='font-bold text-8xl mb-20 w-full text-center text-colors-dark dark:text-colors-light'>
+    <div className=' my-20 '> 
+        <h2 className='font-bold text-8xl mb-20 w-full text-center text-colors-dark dark:text-colors-light md:text-5xl xs:text-4xl md:mb-16'>
             Experience
         </h2>
 
-        <div ref={ref} className=' w-[80%] mx-auto relative'>
-            <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 top-0 w-[4px] h-full bg-colors-dark dark:bg-colors-primary origin-top' />
-            <ul className=' w-full flex flex-col items-start justify-between ml-4'>
+        <div ref={ref} className=' w-[80%] mx-auto relative lg:w-[90%] md:w-full '>
+            <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 md:left-[32px] xs:left-[20px] top-0 w-[4px] h-full 
+            bg-colors-dark dark:bg-colors-primary origin-top md:w-[2px]' />
+            <ul className='w-full mx-auto flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details
                 position='BackEnd Engineer' company='Nikkyzam'
                 companyLink='https://www.nikkyzam.com'

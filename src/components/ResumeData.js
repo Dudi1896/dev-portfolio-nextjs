@@ -127,6 +127,12 @@ export const ResumeData = {
         date2: "Jan 2015 - Dec 2018",
         grade1: "GPA: 4.0",
         grade2: "GPA: 3.3",
+        major3:'Certificate: Web Developer Zero To Mastery',
+        school3:'Organization: Udemy',
+        date3:'Feb 2019',
+        major4:'Certificate: Java SE 17 Developer',
+        school4:'Organization: Oracle Certified Professional',
+        date4:'Feb 2024',
       },
     ],
 

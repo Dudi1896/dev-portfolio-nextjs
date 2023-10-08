@@ -6,8 +6,8 @@ import { AnimatedText } from '@/components/AnimatedText';
 import { HireMe } from '@/components/HireMe';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import { CustomLink } from '@/components/CustomLink';
-// import { Education } from '@/components/Education';
-// import { Experience } from '@/components/Experience';
+import { Education } from '@/components/Education';
+import { Experience } from '@/components/Experience';
 import { About } from '@/components/About';
 import Skills from '@/components/Skills';
 import { Button } from '@/components/Button';
@@ -67,6 +67,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <About />
+        <Skills />
+        <Experience />
+        <Education />
         </Layout>
         <HireMe />
         <div className='absolute right-8 bottom-8 inline-block w-24 lg:hidden'>
@@ -76,10 +80,6 @@ export default function Home() {
             className='w-full h-auto'
           />
         </div>
-        <About />
-        <Skills />
-        {/* <Experience /> */}
-        {/* <Education /> */}
       </main>
     </>
   );

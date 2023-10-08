@@ -4,9 +4,19 @@ import { motion } from 'framer-motion';
 import { DownloadArrow, GithubIcon } from '@/components/Icons';
 import { LinkedInIcon } from '@/components/Icons';
 import { ResumeData } from '@/components/ResumeData';
+import Head from 'next/head';
 
 const resume = () => {
   return (
+ <> 
+  <Head>
+    <title>Denzel Udemba | Resume </title>
+    <meta
+      name='description'
+      content='View Resume'
+    />
+  </Head>
+  
     <Layout className=' text-colors-grayStandard bg-colors-whiteBg px-30 py-12'>
       <div className='flex flex-wrap bg-colors-resumeBg px-3 '>
         <div className='flex w-full flex-row-reverse p-6  justify-items-end'>
@@ -179,6 +189,7 @@ const resume = () => {
         </div>
       </div>
     </Layout>
+ </>
   );
 };
 

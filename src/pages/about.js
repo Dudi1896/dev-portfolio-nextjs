@@ -8,7 +8,6 @@ import { useEffect, useRef } from 'react';
 import Skills from '@/components/Skills';
 import { Experience } from '@/components/Experience';
 import { Education } from '@/components/Education';
-// import { About } from '@/components/About';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -95,7 +94,7 @@ const about = () => {
             </div>
 
             <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center
-            border border-solid border-colors-primaryDark'>
+            '>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block  text-7xl font-bold'>
                   <AnimatedNumbers value={50} />+
@@ -124,9 +123,9 @@ const about = () => {
               </div>
             </div>
           </div>
-          <Skills />
           <Experience />
           <Education />
+          <Skills />
         </Layout>
       </main>
     </>

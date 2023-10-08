@@ -6,7 +6,7 @@ const Tech =({name, x, y}) => {
     <motion.div className='flex items-center justify-center rounded-full font-semibold bg-colors-dark dark:bg-colors-primary
        text-colors-light py-3 px-6 shadow-colors-dark cursor-pointer absolute
        lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent
-       xs:text-dark xs:dark:text-light xs:font-bold'
+       xs:text-colors-dark xs:dark:text-colors-light xs:font-bold'
      whileHover={{ scale: 1.05 }}
      initial={{x:0,y:0}}
      whileInView={{x:x, y:y, transition: {duration: 1.5} }}
@@ -22,7 +22,7 @@ const Tech =({name, x, y}) => {
 const Skills = () => {
   return (
     <>
-      <h2 className='font-bold text-8xl mt-20 w-full text-center dark:text-colors-light md:text-6xl md:10'>Skills</h2>
+      <h2 className='font-bold text-8xl mt-20 w-full text-center  dark:text-colors-light md:text-6xl md:10'>Skills</h2>
       <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark dark:bg-colors-light
       lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
       lg:bg-circularLightLg lg:dark:bg-circularDarkLg
