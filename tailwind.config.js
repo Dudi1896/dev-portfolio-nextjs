@@ -79,5 +79,4 @@ module.exports = {
     // => @media (max-width: 300px) { ... }
 },
   },
-  plugins: [],
 }

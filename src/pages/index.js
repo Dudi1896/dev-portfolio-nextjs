@@ -11,6 +11,7 @@ import { Experience } from '@/components/Experience';
 import { About } from '@/components/About';
 import Skills from '@/components/Skills';
 import { Button } from '@/components/Button';
+import MySkills from '@/components/MySkills';
 
 
 export default function Home() {
@@ -68,8 +69,9 @@ export default function Home() {
             </div>
           </div>
           <About />
-        <Skills />
-        <Experience />
+        {/* <Skills /> */}
+        <MySkills />
+        {/* <Experience /> */}
         <Education />
         </Layout>
         <HireMe />
