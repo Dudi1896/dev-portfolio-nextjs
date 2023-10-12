@@ -12,6 +12,7 @@ import { About } from '@/components/About';
 import Skills from '@/components/Skills';
 import { Button } from '@/components/Button';
 import MySkills from '@/components/MySkills';
+import SignUp from '@/components/SignUp';
 
 
 export default function Home() {
@@ -69,12 +70,12 @@ export default function Home() {
             </div>
           </div>
           <About />
-        {/* <Skills /> */}
-        <MySkills />
         {/* <Experience /> */}
-        <Education />
+        {/* <Education /> */}
+        <SignUp />
         </Layout>
-        <HireMe />
+        {/* <HireMe /> */}
+        {/* <MySkills /> */}
         <div className='absolute right-8 bottom-8 inline-block w-24 lg:hidden'>
           <Image
             src={lightBulb}

@@ -55,8 +55,9 @@ export const NavBar = () => {
     bg-colors-dark/90 dark:bg-colors-light/75 text-colors-light dark:text-colors-dark rounded-lg backdrop-blur-md py-20'>
     <nav className='flex items-center flex-col justify-center'>
         <MobileLink href='/' title='Home' className='' toggle={handleClick} />
-        <MobileLink href='/about' title='About' className='' toggle={handleClick} />
         <MobileLink href='/portfolio' title='Portfolio' className='' toggle={handleClick} />
+        <MobileLink href='/mywork' title='MyWork' className='' toggle={handleClick} />
+        <MobileLink href='/resume' title='Resume' className='' toggle={handleClick} />
         <MobileLink href='/articles' title='Articles' className='' toggle={handleClick} />
       </nav>
 
@@ -109,8 +110,9 @@ export const NavBar = () => {
       <div className=' space-x-5 flex justify-between items-center lg:hidden '>
         <nav>
           <CustomLink href='/' title='Home' className='mr-4'/>
-          <CustomLink href='/about' title='About' className='mx-4'/>
           <CustomLink href='/portfolio' title='Portfolio' className='mx-4'/>
+          <CustomLink href='/mywork' title='MyWork' className='mx-4'/>
+          <CustomLink href='/resume' title='Resume' className='mx-4'/>
           <CustomLink href='/articles' title='Articles' className='ml-4'/>
         </nav>
 

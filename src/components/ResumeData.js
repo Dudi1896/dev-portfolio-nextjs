@@ -41,7 +41,7 @@ export const ResumeData = {
     ],
     contact: [
       {
-        website: "denzel.udemba.com",
+        website: "denzeludemba.com",
         address: "Atlanta, GA",
         email: "denzelu181@gmail.com",
       },

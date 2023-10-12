@@ -42,47 +42,32 @@ export const About = () => {
             text='Passion Fuels Purpose!'
             className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'
           />
-          <div className='grid w-full grid-cols-8 gap-16 dark:text-colors-light sm:gap-0  '>
-            <div className='col-span-3 flex flex-col items-start justify-start dark:text-colors-light xl:col-span-4 md:order-2 md:col-span-8'>
-              <h2 className='mb-4 md:mt-10 text-lg font-bold uppercase text-colors-dark/50 dark:text-colors-primary'>
-                Biography
-              </h2>
-              <p className='font-medium my-4'>
+
+            <div className=' border border-solid border-colors-primaryDark flex flex-row xl:flex-col items-start justify-start dark:text-colors-light '>
+              <div className='font-medium my-4 max-w-[70%] xl:max-w-full p-4'>
+                <h2 className='mb-4 md:mt-10 text-3xl font-bold uppercase text-colors-dark/50 dark:text-colors-primary'>
+                  Biography
+                </h2>
                 Hi, I'm Denzel, a Full-Stack developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With 4 years of experience in the field. I
                 am always looking for new and innovative ways to bring my
                 clients' visions to life.
-              </p>
+              </div>
 
-              <p className='font-medium my-4'>
-                I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
-              </p>
-
-              <p className='font-medium my-4'>
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
-              </p>
+              <div
+                className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-colors-dark
+          bg-colors-light p-2 sm:p-3 xl:col-span-4 md:order-1 md:col-span-8 '
+              >
+                <div className='absolute top-0 -right-3 -z-10 w-[104%] h-[104%] rounded-[1.5rem] bg-colors-dark' />
+                <Image
+                  src={profilePic}
+                  alt='Denzel Udemba'
+                  className='w-full xl:w-52 h-auto rounded-2xl'
+                />
+              </div>
             </div>
-
-            <div
-              className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-colors-dark
-          bg-colors-light p-8 sm:p-3 xl:col-span-4 md:order-1 md:col-span-8'
-            >
-              <div className='absolute top-0 -right-3 -z-10 w-[104%] h-[104%] rounded-[1.5rem] bg-colors-dark' />
-              <Image
-                src={profilePic}
-                alt='Denzel Udemba'
-                className='w-full h-auto rounded-2xl'
-              />
-            </div>
-
-            <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center
+            {/* <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center
             md:order-3 '>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block  text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
@@ -113,12 +98,36 @@ export const About = () => {
                   Years of experience
                 </h2>
               </div>
+            </div> */}
+
+          <div className=' border border-solid my-14 border-colors-primaryDark flex flex-row xl:flex-col items-start justify-start dark:text-colors-light '>
+
+          <div
+                className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-colors-dark
+          bg-colors-light p-2 sm:p-3 xl:col-span-4   '
+              >
+                <div className='absolute top-0 -right-3 -z-10 w-[104%] h-[104%] rounded-[1.5rem] bg-colors-dark' />
+                <Image
+                  src={profilePic}
+                  alt='Denzel Udemba'
+                  className='w-full xl:w-52 h-auto rounded-2xl'
+                />
+              </div>
+
+              <div className='font-medium my-4 max-w-[70%] xl:max-w-full p-4'>
+                <h2 className='mb-4 md:mt-10 text-3xl font-bold uppercase text-colors-dark/50 dark:text-colors-primary'>
+                  Biography
+                </h2>
+                Hi, I'm Denzel, a Full-Stack developer and UI/UX designer with a
+                passion for creating beautiful, functional, and user-centered
+                digital experiences. With 4 years of experience in the field. I
+                am always looking for new and innovative ways to bring my
+                clients' visions to life. 
+              </div>
             </div>
-          </div>
+
         </Layout>
       </main>
     </>
   );
 };
-
-

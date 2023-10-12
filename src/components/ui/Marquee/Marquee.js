@@ -10,7 +10,9 @@ const Marquee = ({
   children,
   ...rest
 }) => {
-  const classes = `overflow-y-hidden ${className}`;
+  const classes = `
+  overflow-y-hidden 
+  h-40 md:h-25 sm:h-20  ${className}`;
 
   return (
     <FastMarquee
