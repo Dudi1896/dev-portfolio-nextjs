@@ -16,17 +16,19 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     <>
       <article
         className=' w-full flex  items-center justify-between  relative rounded-br-2xl
-      rounded-3xl border border-solid border-colors-dark bg-colors-light dark:bg-colors-dark dark:border-colors-light shadow-2xl p-12'
+      rounded-3xl border border-solid border-colors-dark bg-colors-light
+       dark:bg-colors-dark dark:border-colors-light shadow-2xl p-12
+       lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
       >
         <div
           className='absolute top-0 -right-3 -z-10 w-[101%] h-[103.2%] rounded-[2.5rem] bg-colors-dark dark:bg-colors-light
-        rounded-br-3xl'
+        rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w[100%] xs:w-full xs:rounded-[1.5rem]' 
         />
 
         <Link
           href={link}
           target='_blank'
-          className=' w-1/2 cursor-pointer overflow-hidden rounded-lg'
+          className=' w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
         >
           <FramerImage
             src={img}
@@ -41,30 +43,33 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           />
         </Link>
 
-        <div className=' w-1/2 flex flex-col items-start justify-between pl-6'>
-          <span className='text-colors-primary font-medium text-xl'>
+        <div className=' w-1/2 flex flex-col items-start justify-between pl-6
+        lg:w-full lg:pl-0 lg:pt-6'>
+          <span className='text-colors-primary font-medium text-xl xs:text-base'>
             {type}
           </span>
           <CustomLink
             href={link}
             target='_blank'
             title={title}
-            className=' my-2 text-left text-3xl font-bold dark:text-colors-light/80'
+            className=' my-2 text-left text-3xl font-bold dark:text-colors-light/80
+            sm:text-sm'
           ></CustomLink>
-          <p className='my-2 font-medium text-colors-dark dark:text-colors-light/80'>
+          <p className='my-2 font-medium sm:text-sm text-colors-dark dark:text-colors-light/80'>
             {summary}
           </p>
           <div className='flex items-center self-start mt-2'>
-            <div className=' flex items-center px-5 '>
+            <div className=' flex items-center px-5 md:px-1 '>
               <Link
                 href={github}
                 target='_blank'
-                className='w-10'
+                className='w-10 md:text-base'
               >
-                <GithubIcon className='dark:fill-colors-primary' />
+                <GithubIcon className='dark:fill-colors-primary md:w-6' />
               </Link>
             </div>
             <Button
+              className='sm:text-sm'
               text='Visit Project'
               download={false}
               href={github}
@@ -82,11 +87,13 @@ const Project = ({ title, type, img, link, github }) => {
     <>
       <article
         className=' w-full flex-col flex  items-center justify-center  relative
-      rounded-2xl border border-solid dark:border-colors-light border-colors-dark dark:bg-colors-dark bg-colors-light p-6'
+      rounded-2xl border border-solid dark:border-colors-light
+       border-colors-dark dark:bg-colors-dark bg-colors-light p-6 xs:p-4'
       >
         <div
-          className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-colors-dark dark:bg-colors-light
-        rounded-br-3xl'
+          className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] 
+          rounded-[2rem] bg-colors-dark dark:bg-colors-light rounded-br-3xl
+          md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'
         />
         <Link
           href={link}
@@ -103,14 +110,15 @@ const Project = ({ title, type, img, link, github }) => {
         </Link>
 
         <div className=' w-full flex flex-col items-start justify-between mt-4'>
-          <span className='text-colors-primary font-medium text-xl'>
+          <span className='text-colors-primary font-medium text-xl lg:text-lg 
+          md:text-base'>
             {type}
           </span>
           <CustomLink
             href={link}
             target='_blank'
             title={title}
-            className=' my-2 text-left text-3xl font-bold dark:text-colors-light/80'
+            className='lg:text-2xl my-2 text-left text-3xl font-bold dark:text-colors-light/80'
           ></CustomLink>
           <div className=' w-full mt-2 flex items-center justify-between'>
             <Button
@@ -118,11 +126,12 @@ const Project = ({ title, type, img, link, github }) => {
               download={false}
               href={github}
               target='_blank'
+              className='md:text-base'
             />
             <Link
               href={github}
               target='_blank'
-              className='w-8'
+              className='w-8 md:w-6'
             >
               <GithubIcon className='dark:fill-colors-primary'/>
             </Link>
@@ -137,20 +146,22 @@ const mywork = () => {
   return (
     <>
       <Head>
-        <title>Denzel Udemba | Portfolio</title>
+        <title>Denzel Udemba | Project Page</title>
         <meta
           name='description'
           content='mywork page that displays projects worked on'
         />
       </Head>
       <main className=' w-full mb-16 flex flex-col items-center justify-center'>
-        <Layout className='pt-16'>
+        <Layout className='pt-16 sm:px-5'>
           <AnimatedText
             text='My Work'
-            className=' mb-16'
+            className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl
+            xs:!text-4xl'
           />
 
-          <div className='grid grid-cols-12 gap-24'>
+          <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16
+          lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
                 title='Crypto Screener Application'
@@ -163,7 +174,7 @@ const mywork = () => {
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6'>
+            <div className='col-span-6 md:col-span-12'>
               <Project
                 title='Crypto Screener Application'
                 img={project1}
@@ -175,7 +186,7 @@ const mywork = () => {
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6'>
+            <div className='col-span-6 md:col-span-12'>
               <Project
                 title='Crypto Screener Application'
                 img={project1}
@@ -199,7 +210,7 @@ const mywork = () => {
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6'>
+            <div className='col-span-6 md:col-span-12'>
               <Project
                 title='Crypto Screener Application'
                 img={project1}
@@ -211,7 +222,7 @@ const mywork = () => {
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6'>
+            <div className='col-span-6 md:col-span-12'>
               <Project
                 title='Crypto Screener Application'
                 img={project1}

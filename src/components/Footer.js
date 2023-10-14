@@ -12,15 +12,15 @@ export const Footer = () => {
           <span className='text-colors-primary text-2xl px-1'>&#9825;</span>
           by&nbsp;
           <Link
-            href='https://denzeludemba.io'
+            href='/'
             className='underline underline-offset-2'
-            target={'_blank'}
+            target={'_self'}
           >
             Denzel Udemba
           </Link>
         </div>
         <Link
-          href='https://denzeludemba.io'
+          href='mailto:denzelu181@gmail.com'
           target={'_blank'}
           className='underline underline-offset-2'
         >

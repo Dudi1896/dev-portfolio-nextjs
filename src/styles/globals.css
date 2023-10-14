@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer components {
-    .root {
-    @apply mb-10 md:mb-28;
+    .brdr {
+    @apply border-colors-primary border-4 border-solid;
     }
 
     .stackContainer {
@@ -17,9 +15,10 @@
     @apply px-6 transition duration-200 ease-linear transform hover:scale-125;
     }
 
-    .root {
-    @apply transition duration-200 ease-in-out;
+    .glassmorphism {
+     @apply rounded-xl outline-none bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(109,100,199,0.1)] backdrop-blur p-5;
     }
+
 
 }
     

@@ -3,15 +3,10 @@ import Head from 'next/head';
 import profilePic from '../../public/images/profile/developer-pic-1.png';
 import Image from 'next/image';
 import { AnimatedText } from '@/components/AnimatedText';
-import { HireMe } from '@/components/HireMe';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import { CustomLink } from '@/components/CustomLink';
-import { Education } from '@/components/Education';
-import { Experience } from '@/components/Experience';
 import { About } from '@/components/About';
-import Skills from '@/components/Skills';
 import { Button } from '@/components/Button';
-import MySkills from '@/components/MySkills';
 import SignUp from '@/components/SignUp';
 
 
@@ -26,7 +21,7 @@ export default function Home() {
         />
       </Head>
       <main className=' text-colors-dark sm:w-full w-full mb-16 flex flex-col items-center justify-center'>
-        <Layout className='pt-0 md:p-16 sm:pt-8 '>
+        <Layout className='pt-0 md:p-16 sm:pt-8'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className='w-1/2 md:w-full'>  
               <Image
@@ -70,12 +65,9 @@ export default function Home() {
             </div>
           </div>
           <About />
-        {/* <Experience /> */}
-        {/* <Education /> */}
         <SignUp />
         </Layout>
         {/* <HireMe /> */}
-        {/* <MySkills /> */}
         <div className='absolute right-8 bottom-8 inline-block w-24 lg:hidden'>
           <Image
             src={lightBulb}

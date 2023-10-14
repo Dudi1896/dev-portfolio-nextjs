@@ -7,7 +7,7 @@ export const ResumeData = {
       },
     ],
     summary: [
-      "I am highly skilled Software Engineer with over 4 years of experience "+ 
+      `I am highly skilled Software Engineer with over ${new Date().getFullYear()-2019} years of experience `+ 
       "in crafting end-to-end business solutions. My expertise in Full-Stack and DevOps Engineering, "+ 
       "aid in building dynamic web applications with exceptional user experience "+
       "and streamlining workflows to ensure the reliability of applications.",
@@ -59,6 +59,8 @@ export const ResumeData = {
         name: "Nikkyzam",
         period: "Nov 2022 - Present",
         role: "Backend Engineer",
+        address: "Atlanta, GA",
+        companyLink: "https://Nikkyzam.com",
         points: [
           "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
           "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
@@ -70,6 +72,8 @@ export const ResumeData = {
         name: "SW Nutrition & Weight Loss",
         period: "April 2022 - July 2022",
         role: "Full-Stack Engineer",
+        address: "Atlanta, GA",
+        companyLink: "https://ltnglobal.com",
         points: [
           "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
           "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
@@ -81,6 +85,8 @@ export const ResumeData = {
         name: "LTN Global",
         period: "June 2019 - Feb 2022",
         role: "DevOps Engineer",
+        address: "Atlanta, GA",
+        companyLink: "https://ltnglobal.com",
         points: [
           "Designed System Architecture to facilitate SCTE104,35 & 224 Profiles for high-level broadcast companies including" +
             "but not limited to Fox, AMC, Sinclair Broadcast, Singtel, Encompass Digital Media, Sling, Comcast & Werner Media",

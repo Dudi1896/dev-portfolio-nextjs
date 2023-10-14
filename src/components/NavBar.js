@@ -5,9 +5,12 @@ import { motion } from 'framer-motion';
 import { CustomLink } from './CustomLink';
 import useThemeSwitcher from './Hooks/useThemeSwitcher';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
-const MobileLink = ({ href, title, className = '', toggle }) => {
+const MobileLink = ({ href, title, className = '', toggle,  target = '_self' }) => {
   const router = useRouter();
+
+  const linkTarget = target === '_blank' ? '_blank' : '_self';
 
   const handleClick = () => {
     toggle();
@@ -15,7 +18,12 @@ const MobileLink = ({ href, title, className = '', toggle }) => {
   }
 
   return (
-    <button href={href} className={`${className} relative group my-4`}  onClick={handleClick}>
+    <Link 
+    href={href}
+    className={`${className} relative group my-4`}
+    onClick={handleClick}
+    target={linkTarget}
+    >
       {title}
       <span
         className={`h-[2px] inline-block bg-colors-dark 
@@ -25,7 +33,7 @@ const MobileLink = ({ href, title, className = '', toggle }) => {
       >
         &nbsp;
       </span>
-    </button>
+    </Link>
   );
 };
 
@@ -57,13 +65,13 @@ export const NavBar = () => {
         <MobileLink href='/' title='Home' className='' toggle={handleClick} />
         <MobileLink href='/portfolio' title='Portfolio' className='' toggle={handleClick} />
         <MobileLink href='/mywork' title='MyWork' className='' toggle={handleClick} />
-        <MobileLink href='/resume' title='Resume' className='' toggle={handleClick} />
+        <MobileLink href='/resume' title='Resume' className='' target={'_blank'} toggle={handleClick} />
         <MobileLink href='/articles' title='Articles' className='' toggle={handleClick} />
       </nav>
 
       <nav className=' flex items-center justify-center space-x-3 mt-4'>
       <motion.a
-        href='https://github.com'
+        href='https://github.com/Dudi1896/'
         target={'_blank'}
         className='w-6'
         whileHover={{ y: -2 }}
@@ -73,7 +81,7 @@ export const NavBar = () => {
       </motion.a>
 
       <motion.a
-        href='https://linkedin.com'
+        href='https://www.linkedin.com/in/denzel-udemba-3500505b/'
         target={'_blank'}
         className='w-6'
         whileHover={{ y: -2 }}
@@ -112,13 +120,13 @@ export const NavBar = () => {
           <CustomLink href='/' title='Home' className='mr-4'/>
           <CustomLink href='/portfolio' title='Portfolio' className='mx-4'/>
           <CustomLink href='/mywork' title='MyWork' className='mx-4'/>
-          <CustomLink href='/resume' title='Resume' className='mx-4'/>
+          <CustomLink href='/resume' title='Resume' target={'_blank'} className='mx-4'/>
           <CustomLink href='/articles' title='Articles' className='ml-4'/>
         </nav>
 
         <nav className=' flex items-center justify-center space-x-3 '>
         <motion.a
-          href='https://github.com'
+          href='https://github.com/Dudi1896'
           target={'_blank'}
           className='w-6'
           whileHover={{ y: -2 }}
@@ -128,7 +136,7 @@ export const NavBar = () => {
         </motion.a>
 
         <motion.a
-          href='https://linkedin.com'
+          href='https://www.linkedin.com/in/denzel-udemba-3500505b/'
           target={'_blank'}
           className='w-6'
           whileHover={{ y: -2 }}

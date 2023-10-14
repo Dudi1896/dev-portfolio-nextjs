@@ -18,12 +18,12 @@ const resume = () => {
     />
   </Head>
   
-    <Layout className=' text-colors-grayStandard bg-colors-whiteBg px-30 py-12'>
+    <Layout className=' text-colors-grayStandard bg-colors-whiteBg xs:p-2 ms:0 sm:p-2 md:p-3 lg:p-5 xl:p-5 px-30 py-12'>
       <div className='flex flex-wrap bg-colors-resumeBg px-3 '>
         <div className='flex w-full flex-row-reverse p-6  justify-items-end'>
           <nav className='flex items-center justify-center flex-wrap space-x-3'>
             <motion.a
-              href='https://github.com'
+              href='https://github.com/Dudi1896'
               target={'_blank'}
               className='w-5'
               whileHover={{ y: -2 }}
@@ -33,7 +33,7 @@ const resume = () => {
             </motion.a>
 
             <motion.a
-              href='https://linkedin.com'
+              href='https://www.linkedin.com/in/denzel-udemba-3500505b/'
               target={'_blank'}
               className='w-5'
               whileHover={{ y: -2 }}
@@ -43,7 +43,7 @@ const resume = () => {
             </motion.a>
 
             <motion.a
-              href='/public/dummy.pdf'
+              href='/public/Resume_DenzelUdemba_2023.pdf'
               download={true}
               target={'_blank'}
               className='w-5'
@@ -53,7 +53,7 @@ const resume = () => {
               <DownloadArrow />
             </motion.a>
             <a
-              href='/public/dummy.pdf'
+              href='/public/Resume_DenzelUdemba_2023.pdf'
               target={'_blank'}
               download={true}
             >
@@ -127,12 +127,14 @@ const resume = () => {
           </div>
 
           <div className='row-span-6 xl:row-span-full pb-14 font-bold space-y-10'>
-            <div className=' text-colors-primary  max-w-lg font-bold  text-7xl xl:text-5xl'>
+            <div className=' text-colors-primary max-w-lg font-bold  text-7xl xl:text-5xl'>
+              <Link  href='/' target={`_self`} >
               {ResumeData.header.map((header, index) => (
                 <div key={index}>
                   <div>{header.name}</div>
                 </div>
               ))}
+              </Link>
             </div>
 
             <div className=' text-colors-dark font-medium text-xl xl:text-lg'>
@@ -157,14 +159,14 @@ const resume = () => {
               {ResumeData.companies.map((company, index) => (
                 <div className='space-y-1' key={index}
                 >
-                  <div className='max-w-4xl pt-7 flex justify-between'>
+                  <div className='max-w-4xl pt-7 flex md:flex-col justify-between'>
                     <p className=' text-colors-dark lg:text-base md:text-sm'><span className=' text-colors-primary text-xl lg:text-base md:text-sm font-semibold'>{company.name}</span> — {company.role}</p>
                     <p className=' text-xs'>{company.period}</p>
                   </div>
 
                   <div className='max-w-3xl space-y-3'>
                     {company.points.map((point, index) => (
-                      <div className='text-base lg:text-base md:text-xs' key={index}>▪ {point}</div>
+                      <div className='text-base lg:text-base md:text-sm' key={index}>▪ {point}</div>
                     ))}
                   </div>
                 </div>
@@ -178,15 +180,15 @@ const resume = () => {
                   className=' space-y-3'
                   key={index}
                 >
-                  <div className='  max-w-4xl flex lg:flex-col  justify-between '>
-                    <p className=' text-base lg:text-sm md:text-xs' >▪ {education.major1}</p>
-                    <p className=' text-base lg:text-sm md:text-xs'>{education.school1}</p>
+                  <div className='  max-w-4xl flex 2xl:flex-col  justify-between '>
+                    <p className=' text-base lg:text-sm' >▪ {education.major1}</p>
+                    <p className=' text-base lg:text-sm'>{education.school1}</p>
                     <p className=' text-xs '>{education.date1}</p>
                   </div>
 
-                  <div className='  max-w-4xl flex lg:flex-col  justify-between'>
-                    <p className=' text-base lg:text-sm md:text-xs'>▪ {education.major2}</p>
-                    <p className=' text-base lg:text-sm md:text-xs'>{education.school2}</p>
+                  <div className='  max-w-4xl flex 2xl:flex-col  justify-between'>
+                    <p className=' text-base lg:text-sm'>▪ {education.major2}</p>
+                    <p className=' text-base lg:text-sm'>{education.school2}</p>
                     <p className=' text-xs'>{education.date2}</p>
                   </div>
                 </div>
