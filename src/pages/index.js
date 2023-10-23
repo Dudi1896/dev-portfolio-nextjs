@@ -1,16 +1,17 @@
 import { Layout } from '@/components/Layout';
 import Head from 'next/head';
-import profilePic from '../../public/images/profile/developer-pic-1.png';
+import profilePic from "../../public/images/svgs/home-design-unscreen.gif";
 import Image from 'next/image';
 import { AnimatedText } from '@/components/AnimatedText';
-import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
+import lightBulb from '../../public/images/svgs/tree-git.svg';
 import { CustomLink } from '@/components/CustomLink';
 import { About } from '@/components/About';
 import { Button } from '@/components/Button';
 import SignUp from '@/components/SignUp';
-
+import { GitTree } from '@/components/Icons';
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -21,9 +22,9 @@ export default function Home() {
         />
       </Head>
       <main className=' text-colors-dark sm:w-full w-full mb-16 flex flex-col items-center justify-center'>
-        <Layout className='pt-0 md:p-16 sm:pt-8'>
+        <Layout className='pt-0 md:p-16 sm:pt-8 '>
           <div className='flex items-center justify-between w-full lg:flex-col'>
-            <div className='w-1/2 md:w-full'>  
+            <div className='w-1/2 md:w-full -z-50'>  
               <Image
                 src={profilePic}
                 alt='Denzel Udemba'
@@ -36,15 +37,17 @@ export default function Home() {
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText
-                text='Turning Vision Into Reality With Code And Design.'
+                text='Software Engineer and DevOps Enthusiast.'
                 className='!text-6xl !text-left xl:!text-5xl lg:!text-center
                 lg:!text-6xl md:!text-5xl sm:!text-3xl'
               />
               <p className='my-4 text-base font-medium md:text-sm dark:text-colors-light/80'>
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                Greetings and welcome to my tech sanctuary! Here, I dive deep
+                 into the ever-evolving realm of software development and the 
+                 intricate landscapes of cloud-native technologies. As a fellow
+                  software engineer with a passion for DevOps, I‘m thrilled to have
+                   you on board for this exciting journey. Together, we`ll embark on
+                  a thrilling exploration of the digital frontier. 🚀
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Button
@@ -68,12 +71,8 @@ export default function Home() {
         <SignUp />
         </Layout>
         {/* <HireMe /> */}
-        <div className='absolute right-8 bottom-8 inline-block w-24 lg:hidden'>
-          <Image
-            src={lightBulb}
-            alt='Denzel Udemba'
-            className='w-full h-auto'
-          />
+        <div className='absolute right-8 bottom-8 block lg:hidden '>
+          <GitTree className="w-64 fill-colors-dark/5  dark:fill-colors-light/20"/>
         </div>
       </main>
     </>

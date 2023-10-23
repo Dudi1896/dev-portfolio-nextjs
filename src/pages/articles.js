@@ -50,7 +50,8 @@ const MovingImg = ({ title, img, link }) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className=' z-10 w-96 h-auto hidden absolute rounded-lg'
+        className=' z-10 w-96 h-auto hidden absolute rounded-lg
+        md:!hidden'
         priority
         sizes='(max-width: 768px) 100vw,
         (max-width: 1200px) 50vw,
@@ -67,14 +68,17 @@ const Article = ({ img, title, date, link }) => {
       initial={{y:200}}
       whileInView={{y:0, transition:0.5, ease:"easwInOut"}}
       className=' relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-colors-light text-colors-dark first:mt-0
-    border border-solid border-colors-dark  border-r-4 border-b-4 dark:border-colors-light dark:bg-colors-dark dark:text-colors-light'
+    border border-solid border-colors-dark  
+    border-r-4 border-b-4 dark:border-colors-light dark:bg-colors-dark
+     dark:text-colors-light sm:flex-col xs:text-sm'
     >
       <MovingImg
         title={title}
         img={img}
         link={link}
       />
-      <span className=' text-colors-primary font-semibold pl-4'>{date}</span>
+      <span className=' text-colors-primary font-semibold pl-4 sm:self-start
+      sm:pl-0'>{date}</span>
     </motion.li>
   );
 };
@@ -125,12 +129,14 @@ const articles = () => {
         />
       </Head>
       <main className=' w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
-        <Layout className='pt-16'>
+        <Layout className='pt-16 md:px-5 sm:px-2 xs:px-1'>
           <AnimatedText
             text='My Blog'
-            className='mb-16'
+            className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl
+            xs:!text-4xl'
           />
-          <ul className='grid grid-cols-2 gap-16 '>
+          <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1
+          md:gap-y-16'>
             <FeaturedArticle
               title='Build A Custom Pagination Component In Reactjs From Scratch'
               img={article1}
@@ -148,10 +154,11 @@ const articles = () => {
               link='/'
             />
           </ul>
-          <h2 className=' font-bold text-4xl w-full text-center my-16 mt-32 dark:text-colors-light'>
+          <h2 className=' font-bold text-4xl w-full text-center my-16 mt-32 dark:text-colors-light
+          xs:text-lg'>
             All Articles
           </h2>
-          <ul>
+          {/* <ul>
             <Article
               title='Form Validation in Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
               date='September 22, 2023'
@@ -188,7 +195,7 @@ const articles = () => {
               link='/'
               img={article8}
             />
-          </ul>
+          </ul> */}
         </Layout>
       </main>
     </>

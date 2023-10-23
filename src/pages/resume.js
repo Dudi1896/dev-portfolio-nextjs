@@ -115,11 +115,6 @@ const resume = () => {
                     <p>▪ {certification.org2}</p>
                     <p>{certification.cert2}</p>
                   </div>
-
-                  <div className='  max-w-2xl flex justify-between'>
-                    <p>▪ {certification.org3}</p>
-                    <p>{certification.cert3}</p>
-                  </div>
                 </div>
               ))}
             </div>

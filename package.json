@@ -9,23 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.86.4",
-    "@react-three/fiber": "^8.11.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "framer-motion": "^10.12.16",
-    "maath": "^0.5.2",
     "next": "13.4.7",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.1",
     "react-reconciler": "^0.29.0",
-    "react-tilt": "^1.0.2",
+    "react-tsparticles": "^2.12.2",
     "tailwindcss": "3.3.2",
-    "tailwindcss-ui": "^0.2.0",
-    "three": "^0.157.0",
-    "tw-elements": "^1.0.0"
+    "tsparticles": "^2.12.0",
+    "tsparticles-slim": "^2.12.0"
   }
 }

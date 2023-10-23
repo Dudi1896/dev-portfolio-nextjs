@@ -7,7 +7,7 @@ export const ResumeData = {
       },
     ],
     summary: [
-      `I am highly skilled Software Engineer with over ${new Date().getFullYear()-2019} years of experience `+ 
+      `I am a highly skilled Software Engineer with over ${new Date().getFullYear()-2019} years of experience `+ 
       "in crafting end-to-end business solutions. My expertise in Full-Stack and DevOps Engineering, "+ 
       "aid in building dynamic web applications with exceptional user experience "+
       "and streamlining workflows to ensure the reliability of applications.",
@@ -49,7 +49,7 @@ export const ResumeData = {
     links: [
       {
         email: "denzelu181@gmail.com",
-        linkedIn: "https://www.linkedin.com/in/denzel-udemba-3500505b/",
+        linkedIn: "https://www.linkedin.com/in/denzeludemba/",
         github: "https://github.com/Dudi1896",
       },
     ],
@@ -68,19 +68,19 @@ export const ResumeData = {
           "Optimized batch performance by tuning job configurations and utilizing parallel processing techniques",
         ],
       },
-      {
-        name: "SW Nutrition & Weight Loss",
-        period: "April 2022 - July 2022",
-        role: "Full-Stack Engineer",
-        address: "Atlanta, GA",
-        companyLink: "https://ltnglobal.com",
-        points: [
-          "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
-          "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
-          "Collaborated with the team to design and develop microservices architecture using Spring Boot, allowing for modular and scalable application development",
-          "Optimized batch performance by tuning job configurations and utilizing parallel processing techniques",
-        ],
-      },
+      // {
+      //   name: "SW Nutrition & Weight Loss",
+      //   period: "April 2022 - July 2022",
+      //   role: "Full-Stack Engineer",
+      //   address: "Atlanta, GA",
+      //   companyLink: "https://ltnglobal.com",
+      //   points: [
+      //     "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
+      //     "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
+      //     "Collaborated with the team to design and develop microservices architecture using Spring Boot, allowing for modular and scalable application development",
+      //     "Optimized batch performance by tuning job configurations and utilizing parallel processing techniques",
+      //   ],
+      // },
       {
         name: "LTN Global",
         period: "June 2019 - Feb 2022",
@@ -144,29 +144,24 @@ export const ResumeData = {
 
     certification: [
       {
-        org1: "OCP: Java SE 17",
+        org1: "Udemy: NextJs & WordPress",
         org2: "Udemy: Web Dev ZTM",
-        org3: "Udemy: Scrum Master",
 
         cert1: "",
         cert2: "",
-        cert3: "",
       },
     ],
   
     technologies: [
       "JavaScript",
-      "SQL",
       "Java",
       "ElasticSearch",
-      "Kubernetes",
       "Python",
       "AWS (EC2, S3)",
       "VMware Vsphere",
       "Node.js",
       "Next.js",
       "WordPress",
-      "Angular",
       "TailwindCSS",
       "Ansible",
       "GraphQL",
@@ -180,7 +175,6 @@ export const ResumeData = {
       "Responsive Web Design",
       "CI/CD",
       "Solutions Deployment",
-      "SEO",
     ],
   };
   

@@ -4,7 +4,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import ums from '../../public/images/svgs/ums-photo.png';
+import letterScript from '../../public/images/projects/LetterConstructor.jpg'
+import project2 from '../../public/images/projects/sds.png';
+import roboFriends from '../../public/images/projects/robofriends.png'
 import { CustomLink } from '@/components/CustomLink';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/Button';
@@ -164,56 +167,51 @@ const mywork = () => {
           lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency.'
-                link='/'
-                github='/'
+                title='NextJs-Spring Boot Auth'
+                img={ums}
+                summary='A Robust FullStack React and Spring Boot Application utilizing modern design and 
+                efficent coding practices. Authentication provided throught Facebook and other 3rd part providers'
+                link='https://github.com/Dudi1896/user-mngt-system'
+                github='https://github.com/Dudi1896/user-mngt-system'
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6 md:col-span-12'>
+            <div className='col-span-6 lg:col-span-12'>
               <Project
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency.'
-                link='/'
-                github='/'
-                type='Featured Project'
+                title='SDS Consultancy Website'
+                img={project2}
+                summary='Mock Software Consulting Website using HTML, CSS and JavaScript'
+                link='https://dudi1896.github.io/sds.github.io'
+                github='https://dudi1896.github.io/sds.github.io'
+                type='Project'
               />
             </div>
-            <div className='col-span-6 md:col-span-12'>
+            <div className='col-span-6 lg:col-span-12'>
               <Project
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency.'
-                link='/'
-                github='/'
-                type='Featured Project'
+                title='Robo Friends'
+                img={roboFriends}
+                summary='RoboFriends Web App made with Creat-React-App'
+                link='https://dudi1896.github.io/robofriends/'
+                github='https://github.com/Dudi1896/robofriends/'
+                type='Project'
               />
             </div>
             <div className='col-span-12'>
               <FeaturedProject
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency.'
-                link='/'
-                github='/'
+                title='Python Letter Generator'
+                img={letterScript}
+                summary='Basic Python script that sources variables from an excel sheet to automate letter generation
+                 of a standard word document template into multiple unique letters which are then converted to PDF.'
+                link='https://github.com/Dudi1896/PyLetterUpdater'
+                github='https://github.com/Dudi1896/PyLetterUpdater'
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6 md:col-span-12'>
+
+            {/* <div className='col-span-6 lg:col-span-12'>
               <Project
                 title='Crypto Screener Application'
-                img={project1}
+                img={ums}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                     It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                     local currency.'
@@ -222,10 +220,10 @@ const mywork = () => {
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6 md:col-span-12'>
+            <div className='col-span-6 lg:col-span-12'>
               <Project
                 title='Crypto Screener Application'
-                img={project1}
+                img={ums}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                     It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                     local currency.'
@@ -233,7 +231,7 @@ const mywork = () => {
                 github='/'
                 type='Featured Project'
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
