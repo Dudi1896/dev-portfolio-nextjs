@@ -59,7 +59,7 @@ export default function Home() {
                 <CustomLink 
                    title='Contact' 
                   className='ml-4 text-lg font-medium text-colors-dark dark:text-colors-light left-0 -bottom-0.5'
-                  href='mailto:abcd@gmail.com'
+                  href='mailto:denzelu181@gmail.com'
                   target={'_blank'}
                   >
                   Contact

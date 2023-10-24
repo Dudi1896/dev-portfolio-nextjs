@@ -19,7 +19,7 @@ export const Button = ({ download = true, text = 'Button Text', href, target = '
       >
         {text}
         <div className='flex items-center'>
-            <LinkArrow className='ml-3' />
+            <LinkArrow className='ml-3 w-6 md:w-6 sm:w-4' />
         </div>
       </Link>
     </div>

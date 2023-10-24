@@ -161,7 +161,7 @@ export const ResumeData = {
       "VMware Vsphere",
       "Node.js",
       "Next.js",
-      "WordPress",
+      "Sanity.io",
       "TailwindCSS",
       "Ansible",
       "GraphQL",
