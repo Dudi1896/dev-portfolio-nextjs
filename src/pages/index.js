@@ -41,7 +41,7 @@ export default function Home() {
                 className='!text-6xl !text-left xl:!text-5xl lg:!text-center
                 lg:!text-6xl md:!text-5xl sm:!text-3xl'
               />
-              <p className='my-4 text-base font-medium md:text-sm dark:text-colors-light/80'>
+              <p className='my-4 text-base font-medium dark:text-colors-light/80'>
                 Greetings and welcome to my tech sanctuary! Here, I dive deep
                  into the ever-evolving realm of software development and the 
                  intricate landscapes of cloud-native technologies. As a fellow

@@ -14,7 +14,7 @@ export const Button = ({ download = true, text = 'Button Text', href, target = '
         className='flex items-center bg-colors-dark py-2.5 px-3 text-colors-light rounded-lg text-lg
         font-semibold hover:bg-colors-light hover:text-colors-dark border-2 border-solid md:p-2 md:px-4
         md:text-base
-        border-transparent max-w-[250px] hover:border-colors-dark hover:dark:border-colors-primary dark:bg-colors-light dark:text-colors-dark'
+        border-transparent max-w-[250px] md:max-w-[250px] sm:max-w-[250px] hover:border-colors-dark hover:dark:border-colors-primary dark:bg-colors-light dark:text-colors-dark'
         download={download}
       >
         {text}

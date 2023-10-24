@@ -15,24 +15,18 @@ const Stack = ({ src, size }) => {
 
 const MySkills = () => {
   const techStack = [
-  '/images/svgs/CircularText.svg',
-  '/images/svgs/dribbble-icon.svg',
-  '/images/svgs/linkedin.svg',
-  '/images/svgs/pinterest.svg',
-  '/images/svgs/logo-github.svg',
-  '/images/svgs/external-link.svg',
-  '/images/svgs/CircularText.svg',
-  '/images/svgs/dribbble-icon.svg',
-  '/images/svgs/linkedin.svg',
-  '/images/svgs/CircularText.svg',
-  '/images/svgs/dribbble-icon.svg',
-  '/images/svgs/linkedin.svg',
-  '/images/svgs/pinterest.svg',
-  '/images/svgs/logo-github.svg',
-  '/images/svgs/external-link.svg',
-  '/images/svgs/CircularText.svg',
-  '/images/svgs/dribbble-icon.svg',
-  '/images/svgs/linkedin.svg',
+  '/images/svgs/Docker.svg',
+  '/images/svgs/next.svg',
+  '/images/svgs/React.svg',
+  '/images/svgs/Tailwindcss.svg',
+  '/images/svgs/SpringBoot.svg',
+  '/images/svgs/Jenkins.svg',
+  '/images/svgs/Ansible.svg',
+  '/images/svgs/ElasticSearch.svg',
+  '/images/svgs/NodeJs.svg',
+  '/images/svgs/Python.svg',
+
+
   ];
 
   return (

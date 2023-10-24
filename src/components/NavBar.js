@@ -81,7 +81,7 @@ export const NavBar = () => {
       </motion.a>
 
       <motion.a
-        href='https://www.linkedin.com/in/denzel-udemba-3500505b/'
+        href='https://www.linkedin.com/in/denzeludemba/'
         target={'_blank'}
         className='w-6'
         whileHover={{ y: -2 }}
@@ -92,7 +92,7 @@ export const NavBar = () => {
 
       <button
         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-        className={`ml-3 flex items-center justify-center rounded-full p-1
+        className={`ml-3 flex items-center justify-center md:w-6 sm:w-6 xs:w-6 rounded-full p-1
         ${
           mode === 'light'
             ? 'bg-colors-dark text-colors-light'
@@ -136,7 +136,7 @@ export const NavBar = () => {
         </motion.a>
 
         <motion.a
-          href='https://www.linkedin.com/in/denzel-udemba-3500505b/'
+          href='https://www.linkedin.com/in/denzeludemba/'
           target={'_blank'}
           className='w-6'
           whileHover={{ y: -2 }}
