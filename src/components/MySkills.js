@@ -2,6 +2,7 @@ import React from 'react';
 import { Marquee } from '@/components/Marquee';
 import { Layout } from './Layout';
 import {
+  AWSIcon,
   Ansible,
   Docker,
   ElasticSearch,
@@ -50,6 +51,11 @@ const MySkills = () => {
     <SpringBoot
       className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
       key='SpringBoot'
+    />,
+
+    <AWSIcon
+      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20 dark:fill-colors-whiteBg'
+      key='AWSIcon'
     />,
   ];
 
