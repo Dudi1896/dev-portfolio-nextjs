@@ -17,44 +17,44 @@ import {
 const MySkills = () => {
   const techStack = [
     <Docker
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='Docker'
     />,
     <NextJs
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='nextjs'
     />,
     <Ansible
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='ansible'
     />,
     <ElasticSearch
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='elasticsearch'
     />,
     <Jenkins
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='Jenkins'
     />,
     <NodeJs
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='NodeJs'
     />,
     <Python
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='Python'
     />,
     <ReactIcon
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='React'
     />,
     <SpringBoot
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20'
       key='SpringBoot'
     />,
 
     <AWSIcon
-      className='mx-16  md:mx-8 sm:mx-6 w-28 md:w-24 sm:w-20 dark:fill-colors-whiteBg'
+      className='mx-16 xl:mx-12 lg:mx-10  md:mx-8 sm:mx-6 w-32 xl:w-32 lg:w-28 md:w-24 sm:w-20 dark:fill-colors-whiteBg'
       key='AWSIcon'
     />,
   ];
@@ -63,11 +63,11 @@ const MySkills = () => {
     <Layout className='px-0 md:px-0 sm:px-0 lg:px-0 xl:px-0 2xl:px-0 my-5 '>
       <h2
         className='font-bold text-6xl mb-10 w-full text-center text-colors-dark dark:text-colors-light
-        md:text-6xl xs:text-4xl md:mb-16 '
+        md:text-6xl xs:text-4xl md:mb-24 '
       >
         Skills
       </h2>
-      <Marquee className=''>
+      <Marquee >
         {techStack.map((icon, index) => (
           <div key={index}>{icon}</div>
         ))}

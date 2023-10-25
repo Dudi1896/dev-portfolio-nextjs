@@ -8,7 +8,7 @@ export const Footer = () => {
       <Layout className='py-8 flex items-center xs:items-start justify-between dark:text-colors-light lg:flex-col lg:py-6 '>
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className='flex items-start lg:py-2'>
-          Build with{' '}
+          Built with{' '}
           <span className='text-colors-primary text-2xl px-1'>&#9825;</span>
           by&nbsp;
           <Link

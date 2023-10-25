@@ -3,7 +3,7 @@ import { Layout } from '@/components/Layout';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import article1 from '../../public/images/articles/pagination component in reactjs.jpg';
+import article1 from '../../public/images/articles/jasypt_encryption_spring.png';
 import article2 from '../../public/images/articles/create modal component in react using react portals.png';
 import article3 from '../../public/images/articles/form validation in reactjs using custom react hook.png';
 import article4 from '../../public/images/articles/pagination component in reactjs.jpg';
@@ -36,7 +36,7 @@ const MovingImg = ({ title, img, link }) => {
   return (
     <Link
       href={link}
-      target='_blank'
+      target='_self'
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
     >
@@ -93,7 +93,7 @@ export const FeaturedArticle = ({ img, title, time, summary, link }) => {
 
       <Link
         href={link}
-        target='_blank'
+        target='_self'
         className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
       >
         <FramerImage
@@ -106,7 +106,7 @@ export const FeaturedArticle = ({ img, title, time, summary, link }) => {
       </Link>
       <Link
         href={link}
-        target='_blank'
+        target='_self'
       >
         <h2 className=' capitalize text-2xl font-bold my-2 mt-4 hover:underline dark:text-colors-light'>
           {title}
@@ -138,26 +138,25 @@ const articles = () => {
           <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1
           md:gap-y-16'>
             <FeaturedArticle
-              title='Build A Custom Pagination Component In Reactjs From Scratch'
+              title='Coming Soon: Encrypt Sensitive Data using JASYPT'
               img={article1}
               time='9 min read'
-              summary='Learn how to build a custom pagination component in ReactJS from scratch. 
-                  Follow this step-by-step guide to integrate Pagination component in your ReactJS project.'
+              summary='Learn how to secure sensitive data in application.properties files using Jasypt'
               link='/'
             />
-            <FeaturedArticle
+            {/* <FeaturedArticle
               title='Build A Custom Pagination Component In Reactjs From Scratch'
               img={article2}
               time='9 min read'
               summary='Learn how to build a custom pagination component in ReactJS from scratch. 
                   Follow this step-by-step guide to integrate Pagination component in your ReactJS project.'
               link='/'
-            />
+            /> */}
           </ul>
-          <h2 className=' font-bold text-4xl w-full text-center my-16 mt-32 dark:text-colors-light
+          {/* <h2 className=' font-bold text-4xl w-full text-center my-16 mt-32 dark:text-colors-light
           xs:text-lg'>
             All Articles
-          </h2>
+          </h2> */}
           {/* <ul>
             <Article
               title='Form Validation in Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'

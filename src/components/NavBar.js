@@ -24,23 +24,6 @@ const MobileLink = ({
   };
 
   return (
-    // <Link
-    // href={href}
-    // className={`${className} relative group my-4`}
-    // onClick={handleClick}
-    // target={linkTarget}
-    // >
-    //   {title}
-    //   <span
-    //     className={`h-[2px] inline-block bg-colors-dark
-    //   absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-    //   ${router.asPath === href ? 'w-full' : 'w-0'}
-    //   dark:bg-colors-light dark:text-colors-light`}
-    //   >
-    //     &nbsp;
-    //   </span>
-    // </Link>
-
     <a
       href={href}
       className={`${className} relative group my-4`}
@@ -103,7 +86,6 @@ export const NavBar = () => {
             <MobileLink
               href='/resume'
               title='Resume'
-              target={'_blank'}
               toggle={handleClick}
             />
             <MobileLink

@@ -52,11 +52,6 @@ export const Education = () => {
         time: ResumeData.education[0].date3, // Add the date for the second education here
         place: ResumeData.education[0].school3,
       },
-      // {
-      //   type: ResumeData.education[0].major4,
-      //   time: ResumeData.education[0].date4, // Add the date for the second education here
-      //   place: ResumeData.education[0].school4,
-      // },
   ];
 
   return (
