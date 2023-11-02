@@ -125,32 +125,32 @@ export const ResumeData = {
   
     education: [
       {
-        major1: "Major: A.S Computer Programming",
-        major2: "Major: B.S.E Electrical Engineering",
-        school1: "Chattahoochee Technical College",
-        school2: "Mercer University",
-        date1: "Jun 2022 - May 2024",
-        date2: "Jan 2015 - Dec 2018",
+        major1: "Major: B.S.E Electrical Engineering",
+        // major2: "Major: B.S.E Electrical Engineering",
+        school1: "Mercer University",
+        // school2: "Mercer University",
+        date1: "Jan 2015 - Dec 2018",
+        // date2: "Jan 2015 - Dec 2018",
         grade1: "GPA: 4.0",
         grade2: "GPA: 3.3",
-        major3:'Certificate: Web Developer Zero To Mastery',
-        school3:'Organization: Udemy',
-        date3:'Feb 2019',
+        // major3:'Certificate: Web Developer Zero To Mastery',
+        // school3:'Organization: Udemy',
+        // date3:'Feb 2019',
         major4:'Certificate: Java SE 17 Developer',
         school4:'Organization: Oracle Certified Professional',
         date4:'Feb 2024',
       },
     ],
 
-    certification: [
-      {
-        org1: "Udemy: NextJs & WordPress",
-        org2: "Udemy: Web Dev ZTM",
+    // certification: [
+    //   {
+    //     org1: "Udemy: NextJs & WordPress",
+    //     org2: "Udemy: Web Dev ZTM",
 
-        cert1: "",
-        cert2: "",
-      },
-    ],
+    //     cert1: "",
+    //     cert2: "",
+    //   },
+    // ],
   
     technologies: [
       "JavaScript",

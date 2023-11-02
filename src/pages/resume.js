@@ -99,7 +99,7 @@ const resume = () => {
               ))}
             </div>
 
-            <div className='p-4'>
+            {/* <div className='p-4'>
               <h2 className='text-colors-primary font-semibold'>Certifications:</h2>
               {ResumeData.certification.map((certification, index) => (
                 <div
@@ -117,7 +117,7 @@ const resume = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
           </div>
 
@@ -172,19 +172,13 @@ const resume = () => {
               <h2 className='text-colors-primary font-bold text-lg border-b-2 border-solid border-colors-primaryDark'>Education</h2>
               {ResumeData.education.map((education, index) => (
                 <div
-                  className=' space-y-3'
+                  className=' mt-5 space-y-3'
                   key={index}
                 >
-                  <div className='  max-w-4xl flex 2xl:flex-col  justify-between '>
-                    <p className=' text-base lg:text-sm' >▪ {education.major1}</p>
+                  <div className=' max-w-4xl flex 2xl:flex-col  justify-between'>
+                    <p className=' text-base lg:text-sm'>▪ {education.major1}</p>
                     <p className=' text-base lg:text-sm'>{education.school1}</p>
-                    <p className=' text-xs '>{education.date1}</p>
-                  </div>
-
-                  <div className='  max-w-4xl flex 2xl:flex-col  justify-between'>
-                    <p className=' text-base lg:text-sm'>▪ {education.major2}</p>
-                    <p className=' text-base lg:text-sm'>{education.school2}</p>
-                    <p className=' text-xs'>{education.date2}</p>
+                    <p className=' text-xs'>{education.date1}</p>
                   </div>
                 </div>
               ))}
