@@ -7,9 +7,9 @@ const nextConfig = {
     domains: ['6581f9c18fe8155bc295a0ba--magnificent-bubblegum-c1842c.netlify.app'],
     domains: ['denzeludemba.render.com'],
   },
-  rules: {
-    "@next/next/no-img-element": "off",
-   },
+  // rules: {
+  //   "@next/next/no-img-element": "off",
+  //  },
   
 };
 
