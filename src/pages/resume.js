@@ -45,7 +45,7 @@ const resume = () => {
             <motion.a
               href='/Resume_DenzelUdemba.pdf'
               download={true}
-              target={'_blank'}
+              target={`_self`}
               className='w-5'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -54,7 +54,7 @@ const resume = () => {
             </motion.a>
             <a
               href='/Resume_DenzelUdemba.pdf'
-              target={'_blank'}
+              target={`_self`}
               download={true}
             >
               Download

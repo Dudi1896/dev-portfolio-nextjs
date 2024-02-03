@@ -156,7 +156,7 @@ export const NavBar = () => {
           <CustomLink
             href='/resume'
             title='Resume'
-            target={'_blank'}
+            target={`_self`}
             className='mx-4'
           />
           <CustomLink

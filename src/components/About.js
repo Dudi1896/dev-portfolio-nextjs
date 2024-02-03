@@ -43,7 +43,7 @@ export const About = () => {
               </div>
 
               <div className='font-medium my-4 max-w-[60%] xl:max-w-full p-4 pl-20 md:pl-0 '>
-                    I‘m currently working as a Back-End Engineer
+                    I‘m currently working as a Backend Engineer
                     at Nikkyzam Consulting Services mostly using
                     Spring Boot to build microservices. And occasionally,
                     I delve into build Pipelines with Jenkins and OpenShift.

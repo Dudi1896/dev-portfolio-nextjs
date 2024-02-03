@@ -46,7 +46,7 @@ export default function Home() {
                  into the ever-evolving realm of software development and the 
                  intricate landscapes of cloud-native technologies. As a fellow
                   software engineer with a passion for DevOps, I‘m thrilled to have
-                   you on board for this exciting journey. Together, we`ll embark on
+                   you on board for this exciting journey. Together, we‘ll embark on
                   a thrilling exploration of the digital frontier. 🚀
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
@@ -54,7 +54,7 @@ export default function Home() {
                  text="Resume"
                  download={false}
                  href='/resume'
-                 target='_blank'
+                target={`_self`}
                 />
                 <CustomLink 
                    title='Contact' 
