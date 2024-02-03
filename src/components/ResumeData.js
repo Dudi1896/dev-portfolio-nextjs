@@ -48,7 +48,7 @@ export const ResumeData = {
     ],
     links: [
       {
-        email: "denzelu181@gmail.com",
+        email: "denzeludemba@gmail.com",
         linkedIn: "https://www.linkedin.com/in/denzeludemba/",
         github: "https://github.com/Dudi1896",
       },
@@ -139,7 +139,7 @@ export const ResumeData = {
       "Git",
       "Ansible",
       "SonarQube",
-      "Spring Boot",
+      "SpringBoot",
       "Docker",
     ],
     otherProficiencies: [
