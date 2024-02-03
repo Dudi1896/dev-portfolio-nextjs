@@ -65,7 +65,7 @@ export const ResumeData = {
           "Initiated and led SpringBoot 3 and JDK 17 upgrade for the in-app-notifications module, resulting in enhanced performance and compatibility with the latest Java technologies.",
           "Developed an SQL script for table creation and data population, following best practices in database design. Achieved a 15% increase in database query efficiency and overall system responsiveness.",
           "Collaborated with security personnel utilizing SonarQube to identify and rectify CWE-20 vulnerabilities in the codebase, achieving an 18% reduction in security vulnerabilities and enhanced code quality.",
-          "Collaboratively with a 5-person engineering team to migrate SOAP Balance-Due microservice to a RESTful application, improving statelessness and system scalability.",
+          "Worked with a 5-person engineering team to migrate SOAP Balance-Due microservice to a RESTful application, improving statelessness and system scalability.",
           "Partnered with senior engineers to develop a Spring Batch application for converting WSDL to JSON in order to provide mock TIN user data for the QA team. Reduced testing cycle time by 20% and improved the accuracy of test scenarios.",
         ],
       },
