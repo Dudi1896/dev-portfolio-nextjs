@@ -20,7 +20,7 @@ export const Footer = () => {
           </Link>
         </div>
         <Link
-          href='mailto:denzelu181@gmail.com'
+          href='mailto:denzeludemba@gmail.com'
           target={'_blank'}
           className='underline underline-offset-2'
         >

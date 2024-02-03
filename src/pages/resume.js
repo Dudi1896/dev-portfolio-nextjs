@@ -18,7 +18,7 @@ const resume = () => {
     />
   </Head>
   
-    <Layout className=' text-colors-grayStandard bg-colors-whiteBg xs:p-2 ms:0 sm:p-2 md:p-3 lg:p-5 xl:p-5 px-30 py-12'>
+    <Layout className=' text-colors-grayStandard bg-colors-whiteBg xs:p-2 ms:0 sm:p-2 md:p-3 lg:p-5 xl:p-5 px-80 py-12'>
       <div className='flex flex-wrap bg-colors-resumeBg px-3 '>
         <div className='flex w-full flex-row-reverse p-6  justify-items-end'>
           <nav className='flex items-center justify-center flex-wrap space-x-3'>
@@ -33,7 +33,7 @@ const resume = () => {
             </motion.a>
 
             <motion.a
-              href='https://www.linkedin.com/in/denzel-udemba-3500505b/'
+              href='https://www.linkedin.com/in/denzeludemba/'
               target={'_blank'}
               className='w-5'
               whileHover={{ y: -2 }}
@@ -43,7 +43,7 @@ const resume = () => {
             </motion.a>
 
             <motion.a
-              href='/public/Resume_DenzelUdemba_2023.pdf'
+              href='/Resume_DenzelUdemba.pdf'
               download={true}
               target={'_blank'}
               className='w-5'
@@ -53,7 +53,7 @@ const resume = () => {
               <DownloadArrow />
             </motion.a>
             <a
-              href='/public/Resume_DenzelUdemba_2023.pdf'
+              href='/Resume_DenzelUdemba.pdf'
               target={'_blank'}
               download={true}
             >
@@ -72,7 +72,7 @@ const resume = () => {
                   </Link>
                   </div>
                   <div>
-                  <Link href='mailto:denzelu181@gmail.com' target='_blank' className=' text-colors-primary underline'>
+                  <Link href='mailto:denzeludemba@gmail.com' target='_blank' className=' text-colors-primary underline'>
                     {addr.email}
                   </Link>
                   </div>
@@ -156,7 +156,7 @@ const resume = () => {
                 >
                   <div className='max-w-4xl pt-7 flex md:flex-col justify-between'>
                     <p className=' text-colors-dark lg:text-base md:text-sm'><span className=' text-colors-primary text-xl lg:text-base md:text-sm font-semibold'>{company.name}</span> — {company.role}</p>
-                    <p className=' text-xs'>{company.period}</p>
+                    <p className=' text-sm'>{company.period}</p>
                   </div>
 
                   <div className='max-w-3xl space-y-3'>
@@ -178,12 +178,11 @@ const resume = () => {
                   <div className=' max-w-4xl flex 2xl:flex-col  justify-between'>
                     <p className=' text-base lg:text-sm'>▪ {education.major1}</p>
                     <p className=' text-base lg:text-sm'>{education.school1}</p>
-                    <p className=' text-xs'>{education.date1}</p>
+                    <p className=' text-sm'>{education.date1}</p>
                   </div>
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </div>

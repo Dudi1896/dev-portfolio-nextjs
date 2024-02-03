@@ -89,9 +89,9 @@ const Project = ({ title, type, img, link, github }) => {
   return (
     <>
       <article
-        className=' w-full flex-col flex  items-center justify-center  relative
+        className=' w-full flex-col flex  items-center justify-center relative
       rounded-2xl border border-solid dark:border-colors-light
-       border-colors-dark dark:bg-colors-dark bg-colors-light p-6 xs:p-4'
+       border-colors-dark dark:bg-colors-dark bg-colors-light p-6 xs:p-4 h-[90%]'
       >
         <div
           className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] 

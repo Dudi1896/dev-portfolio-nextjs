@@ -3,7 +3,6 @@ import Head from 'next/head';
 import profilePic from "../../public/images/svgs/home-design-unscreen.gif";
 import Image from 'next/image';
 import { AnimatedText } from '@/components/AnimatedText';
-import lightBulb from '../../public/images/svgs/tree-git.svg';
 import { CustomLink } from '@/components/CustomLink';
 import { About } from '@/components/About';
 import { Button } from '@/components/Button';
@@ -60,7 +59,7 @@ export default function Home() {
                 <CustomLink 
                    title='Contact' 
                   className='ml-4 text-lg font-medium text-colors-dark dark:text-colors-light left-0 -bottom-0.5'
-                  href='mailto:denzelu181@gmail.com'
+                  href='mailto:denzeludemba@gmail.com'
                   target={'_blank'}
                   >
                   Contact

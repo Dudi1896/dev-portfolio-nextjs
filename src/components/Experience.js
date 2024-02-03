@@ -26,7 +26,7 @@ const Details = ({ position, company, address, work, ref }) => {
           {/* Render bullet points as an unordered list */}
           <ul className="font-medium w-full md:text-sm">
             {bulletPoints.map((point, index) => (
-              <li key={index}>▪ {point}</li>
+              <li key={index}> {point}</li>
             ))}
           </ul>
         </motion.div>
@@ -48,7 +48,7 @@ export const Experience = () => {
         Experience
       </h2>
 
-      <div ref={ref} className="w-[80%] mx-auto relative lg:w-[90%] md:w-full">
+      <div ref={ref} className="w-[70%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute left-8 md:left-[32px] xs:left-[20px] top-0 w-[4px] h-full bg-colors-dark dark:bg-colors-primary origin-top md:w-[2px]"
@@ -60,7 +60,7 @@ export const Experience = () => {
               position={company.role}
               company={company}
               address={company.address}
-              work={company.points.join('\n')} // Combine bullet points with line breaks
+              work={company.points.join('\n\u00a0\n')} // Combine bullet points with line breaks
               ref={ref}
             />
           ))}

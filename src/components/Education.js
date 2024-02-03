@@ -51,7 +51,7 @@ export const Education = () => {
             Education
         </h2>
 
-        <div ref={ref} className=' w-[80%] mx-auto relative lg:w-[90] md:w-full'>
+        <div ref={ref} className=' w-[70%] mx-auto relative lg:w-[90] md:w-full'>
             <motion.div style={{scaleY: scrollYProgress }} className='absolute left-8 md:left-[32px] xs:left-[20px] top-0 w-[4px] h-full
              bg-colors-dark dark:bg-colors-primary origin-top md:w-[2px]' />
             <ul className=' w-full mx-auto flex flex-col items-start justify-between ml-4 xs:ml-2'>

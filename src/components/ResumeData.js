@@ -7,13 +7,13 @@ export const ResumeData = {
       },
     ],
     summary: [
-      `I am a highly skilled Software Engineer with over ${new Date().getFullYear()-2019} years of experience `+ 
-      "in crafting end-to-end business solutions. My expertise in Full-Stack and DevOps Engineering, "+ 
-      "aid in building dynamic web applications with exceptional user experience "+
-      "and streamlining workflows to ensure the reliability of applications.",
+      `Highly skilled Software Engineer with over ${new Date().getFullYear()-2019} years of experience ` +
+      "in crafting end-to-end business solutions. Proven experience in successfully leading and contributing, "+
+      "to various software development initiatives, with a focus on modernizing applications, enhancing "+
+      "security, and improving overall system performance.",
     ],  
     about: [
-      "Experienced Software Engineer with a proven track record of over 4 years in the dynamic",
+      "Experienced Software Engineer with a proven track record of over 5 years in the dynamic",
       "fields of DevOps and Full Stack Development. I specialize in bridging the gap between development",
       "and operations, ensuring seamless, efficient, and scalable software solutions.",
       "My journey in the world of technology has equipped me with a diverse skill set, ranging from building", 
@@ -25,7 +25,7 @@ export const ResumeData = {
       "Let's connect and explore how we can work together to create cutting-edge software solutions and drive digital transformation.",
       "Feel free to reach out—I'm always open to networking and discussing exciting opportunities.",
 
-      "As a seasoned Full Stack Software Engineer with over 4 years of hands-on experience, I am passionate about crafting", 
+      "As a seasoned Full Stack Software Engineer with over 5 years of hands-on experience, I am passionate about crafting", 
       "end-to-end solutions that empower businesses and drive innovation. With a strong foundation in both front-end and",
       "back-end development, I specialize in creating dynamic web applications that deliver exceptional user experiences",
       "My journey in the tech industry has led me to master a wide range of technologies and tools, enabling me to architect",
@@ -43,7 +43,7 @@ export const ResumeData = {
       {
         website: "denzeludemba.com",
         address: "Atlanta, GA",
-        email: "denzelu181@gmail.com",
+        email: "denzeludemba@gmail.com",
       },
     ],
     links: [
@@ -56,43 +56,32 @@ export const ResumeData = {
   
     companies: [
       {
-        name: "Nikkyzam",
-        period: "Nov 2022 - Present",
-        role: "Backend Engineer",
-        address: "Atlanta, GA",
+        name: "Nikkyzam Consulting Services",
+        period: "Aug 2022 - Present",
+        role: "IRS Contractor Backend Engineer",
+        address: "Cumming, GA",
         companyLink: "https://Nikkyzam.com",
         points: [
-          "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
-          "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
-          "Collaborated with the team to design and develop microservices architecture using Spring Boot, allowing for modular and scalable application development",
-          "Optimized batch performance by tuning job configurations and utilizing parallel processing techniques",
+          "Initiated and led SpringBoot 3 and JDK 17 upgrade for the in-app-notifications module, resulting in enhanced performance and compatibility with the latest Java technologies.",
+          "Developed an SQL script for table creation and data population, following best practices in database design. Achieved a 15% increase in database query efficiency and overall system responsiveness.",
+          "Collaborated with security personnel utilizing SonarQube to identify and rectify CWE-20 vulnerabilities in the codebase, achieving an 18% reduction in security vulnerabilities and enhanced code quality.",
+          "Collaboratively with a 5-person engineering team to migrate SOAP Balance-Due microservice to a RESTful application, improving statelessness and system scalability.",
+          "Partnered with senior engineers to develop a Spring Batch application for converting WSDL to JSON in order to provide mock TIN user data for the QA team. Reduced testing cycle time by 20% and improved the accuracy of test scenarios.",
         ],
       },
-      // {
-      //   name: "SW Nutrition & Weight Loss",
-      //   period: "April 2022 - July 2022",
-      //   role: "Full-Stack Engineer",
-      //   address: "Atlanta, GA",
-      //   companyLink: "https://ltnglobal.com",
-      //   points: [
-      //     "Developed RESTful APIs using Java and Spring Framework to enable efficient communication between client applications and server",
-      //     "Utilized Hibernate ORM (Object-Relational Mapping) for seamless integration with relational databases like MySQL and PostgreSQL",
-      //     "Collaborated with the team to design and develop microservices architecture using Spring Boot, allowing for modular and scalable application development",
-      //     "Optimized batch performance by tuning job configurations and utilizing parallel processing techniques",
-      //   ],
-      // },
       {
         name: "LTN Global",
         period: "June 2019 - Feb 2022",
         role: "DevOps Engineer",
-        address: "Atlanta, GA",
+        address: "Alpharetta, GA",
         companyLink: "https://ltnglobal.com",
         points: [
-          "Designed System Architecture to facilitate SCTE104,35 & 224 Profiles for high-level broadcast companies including" +
-            "but not limited to Fox, AMC, Sinclair Broadcast, Singtel, Encompass Digital Media, Sling, Comcast & Werner Media",
-          "Provisioned, orchestrated, and deployed Software solutions in Vmware Vsphere Environment using Ansible",
+          "Designed System Architecture to facilitate SCTE104,35 & 224 Profiles for high-level broadcast companies including but not limited to Fox, AMC, Sinclair Broadcast, Singtel, Encompass Digital Media, Sling, Comcast & Werner Media",
+          "Collaborated with stakeholders to understand unique requirements and tailored solutions to meet their broadcasting needs effectively.",
+          "Utilized Ansible for provisioning, orchestrating, and deploying software solutions within the VMware vSphere environment.",
           "Spearheaded numerous projects requiring the migration of On-premises Servers to AWS EC2 Instances using Cloudformation Template",
-          "Wrote Bash shell script for LTNs Video Metadata Analyzer to optimize SCTE104 Logger processes, thus reducing CPU Load by 60%",
+          "Wrote Bash script for LTNs Video Metadata Analyzer to optimize SCTE104 Logger processes, reducing CPU Load by 60%",
+
         ],
       },
     ],
@@ -126,31 +115,17 @@ export const ResumeData = {
     education: [
       {
         major1: "Major: B.S.E Electrical Engineering",
-        // major2: "Major: B.S.E Electrical Engineering",
         school1: "Mercer University",
-        // school2: "Mercer University",
         date1: "Jan 2015 - Dec 2018",
-        // date2: "Jan 2015 - Dec 2018",
         grade1: "GPA: 4.0",
         grade2: "GPA: 3.3",
-        // major3:'Certificate: Web Developer Zero To Mastery',
-        // school3:'Organization: Udemy',
-        // date3:'Feb 2019',
         major4:'Certificate: Java SE 17 Developer',
         school4:'Organization: Oracle Certified Professional',
         date4:'Feb 2024',
       },
     ],
 
-    // certification: [
-    //   {
-    //     org1: "Udemy: NextJs & WordPress",
-    //     org2: "Udemy: Web Dev ZTM",
 
-    //     cert1: "",
-    //     cert2: "",
-    //   },
-    // ],
   
     technologies: [
       "JavaScript",
@@ -159,22 +134,23 @@ export const ResumeData = {
       "Python",
       "AWS (EC2, S3)",
       "VMware Vsphere",
-      "Node.js",
-      "Next.js",
-      "Sanity.io",
+      "Apache Maven",
       "TailwindCSS",
+      "Git",
       "Ansible",
-      "GraphQL",
+      "SonarQube",
       "Spring Boot",
       "Docker",
     ],
     otherProficiencies: [
       "Virtualization",
-      "Product Development",
-      "Performance Optimization",
-      "Responsive Web Design",
+      "Team Collaboration",
+      "Problem Solving",
+      "Critical Thinking",
       "CI/CD",
       "Solutions Deployment",
+      "Security Analysis",
+      "Database Design",
     ],
   };
   
