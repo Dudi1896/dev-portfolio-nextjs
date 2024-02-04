@@ -1,5 +1,5 @@
 import { Layout } from '@/components/Layout';
-import profilePic from '../../public/images/profile/portrait.jpg';
+import profilePic from '/public/images/profile/portrait.jpg';
 import Image from 'next/image';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import { GitTree, Pipeline } from './Icons';

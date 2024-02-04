@@ -4,10 +4,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
-import ums from '../../public/images/svgs/ums-photo.png';
-import letterScript from '../../public/images/projects/LetterConstructor.jpg'
-import project2 from '../../public/images/projects/sds.png';
-import roboFriends from '../../public/images/projects/robofriends.png'
+import ums from '/public/images/svgs/ums-photo.png';
+import letterScript from '/public/images/projects/LetterConstructor.jpg'
+import project2 from '/public/images/projects/sds.png';
+import roboFriends from '/public/images/projects/robofriends.png'
 import { CustomLink } from '@/components/CustomLink';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/Button';

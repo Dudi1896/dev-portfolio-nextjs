@@ -13,13 +13,21 @@ const Stack = ({ src }) => {
 
 const TechStack = () => {
   const techStack = [
-    '../../public/images/svgs/twitter.svg',
-    '../../public/images/svgs/CircularText.svg',
-    '../../public/images/svgs/dribbble-icon.svg',
-    '../../public/images/svgs/linkedin.svg',
-    '../../public/images/svgs/pinterest.svg',
-    '../../public/images/svgs/logo-github.svg',
-    '../../public/images/svgs/external-link.svg',
+    '/public/images/svgs/twitter.svg',
+    '/public/images/svgs/CircularText.svg',
+    '/public/images/svgs/dribbble-icon.svg',
+    '/public/images/svgs/linkedin.svg',
+    '/public/images/svgs/pinterest.svg',
+    '/public/images/svgs/logo-github.svg',
+    '/public/images/svgs/external-link.svg',
+
+    // '../../public/images/svgs/twitter.svg',
+    // '../../public/images/svgs/CircularText.svg',
+    // '../../public/images/svgs/dribbble-icon.svg',
+    // '../../public/images/svgs/linkedin.svg',
+    // '../../public/images/svgs/pinterest.svg',
+    // '../../public/images/svgs/logo-github.svg',
+    // '../../public/images/svgs/external-link.svg',
   ];
 
   return (

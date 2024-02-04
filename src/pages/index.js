@@ -1,6 +1,7 @@
 import { Layout } from '@/components/Layout';
 import Head from 'next/head';
-import profilePic from "../../public/images/svgs/home-design-unscreen.gif";
+// import profilePic from "../../public/images/svgs/home-design-unscreen.gif";
+import profilePic from "/public/images/svgs/home-design-unscreen.gif";
 import Image from 'next/image';
 import { AnimatedText } from '@/components/AnimatedText';
 import { CustomLink } from '@/components/CustomLink';
